@@ -46,6 +46,11 @@ export default function PageLatex({ latex, className }) {
           padding: 0;
         }
 
+        body, .page {
+          max-width: 100%;
+          min-width: 100%;
+        }
+
         img {
           max-width: 100%;
           height: auto;
