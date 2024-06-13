@@ -187,11 +187,7 @@ export default function PageLatex({ latex, className }) {
       className={`PageLatex w-full ${className}`}
       style={{
         height: iframeHeight,
-        minHeight: '100vh',
         opacity: iframeHeight > 100 ? 1 : 0,
-        WebkitOverflowScrolling: "touch",
-        overflowX: "hidden",
-        overflowY: "hidden",
       }}
       ref={iframeRef}
       src={iframeSrc}

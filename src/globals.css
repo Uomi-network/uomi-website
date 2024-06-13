@@ -93,6 +93,13 @@ body {
   }
 }
 
+.PageLatex {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+}
+
 .Hero__text-animation {
   animation: pulse 10s infinite;
 }
