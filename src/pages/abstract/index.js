@@ -6,7 +6,7 @@ import PageTitle from "../../components/PageTitle";
 import PageContent from "../../components/PageContent";
 
 const html = `
-  <h2 style="text-align: center"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto;" /><span style="display: none">UOMI</span></h2>
+  <h2 style="text-align: center; margin-bottom: 80px;"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto;" /><span style="display: none">UOMI</span></h2>
   <p>
     Welcome to UOMI Network, the forefront of integrating artificial
     intelligence with blockchain technology to create autonomous economic
