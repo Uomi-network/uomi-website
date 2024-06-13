@@ -47,8 +47,8 @@ export default function PageLatex({ latex, className }) {
         }
 
         body, .page {
-          max-width: 100%;
-          min-width: 100%;
+          max-width: 100% !important;
+          min-width: 100% !important;
         }
 
         img {
