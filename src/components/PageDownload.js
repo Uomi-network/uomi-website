@@ -8,7 +8,7 @@ export default function PageDownload({ url, label, className }) {
         href={url}
         download
         target="_blank"
-        className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-primaryDark"
+        className="flex items-center gap-2 text-white hover:underline"
       >
         <MdDownload />
         {label}

@@ -36,14 +36,14 @@ export default function Hero() {
         <source src="/assets/video-home-bg.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
+      {/* <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
         <Link
           href="/abstract"
           className="bg-white text-black font-bold px-6 py-3 rounded-full hover:bg-primary hover:text-white"
         >
           Discover more
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }
