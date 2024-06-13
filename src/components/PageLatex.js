@@ -168,6 +168,7 @@ export default function PageLatex({ latex, className }) {
           viewer.appendChild(generator.domFragment())
           replaceCustomComponents(viewer)
           onResize()
+          setInterval(onResize, 1000)
         }
         _()
       </script>
