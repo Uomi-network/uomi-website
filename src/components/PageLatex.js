@@ -147,7 +147,7 @@ export default function PageLatex({ latex, className }) {
         };
 
         const onResize = () => {
-          window.parent.postMessage({ type: "height", height: document.body.scrollHeight + 100 }, "*")
+          window.parent.postMessage({ type: "height", height: document.body.scrollHeight + 150 }, "*")
         }
         window.addEventListener("resize", onResize)
 
@@ -178,8 +178,15 @@ export default function PageLatex({ latex, className }) {
 
   return (
     <iframe
-      className={`PageLatex w-full overflow-hidden ${className}`}
-      style={{ height: iframeHeight, minHeight: '100vh', opacity: iframeHeight > 0 ? 1 : 0 }}
+      className={`PageLatex w-full ${className}`}
+      style={{
+        height: iframeHeight,
+        minHeight: '100vh',
+        opacity: iframeHeight > 100 ? 1 : 0,
+        WebkitOverflowScrolling: "touch",
+        overflowX: "hidden",
+        overflowY: "hidden",
+      }}
       ref={iframeRef}
       src={iframeSrc}
     />

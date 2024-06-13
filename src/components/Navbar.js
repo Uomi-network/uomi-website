@@ -129,7 +129,7 @@ export default function Navbar() {
             <Image
               src="/assets/logo.svg"
               alt="Logo"
-              className="w-48"
+              className="w-48 h-24"
               width={100}
               height={36}
             />
