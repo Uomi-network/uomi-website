@@ -24,7 +24,7 @@ const MENU_ITEMS = [
     ]
   },
   {
-    title: "AGENT",
+    title: "AGENTS",
     href: "/agent",
   },
 ]
