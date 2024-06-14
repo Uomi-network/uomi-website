@@ -92,7 +92,15 @@ export default function Navbar() {
           <Image
             src="/assets/logo-pictogram.svg"
             alt="Uomi logo"
-            className="h-10 w-auto"
+            className="h-10 w-auto hidden md:block"
+            width={36}
+            height={36}
+          />
+
+          <Image
+            src="/assets/logo.svg"
+            alt="Uomi logo"
+            className="h-10 w-20 block md:hidden object-cover"
             width={36}
             height={36}
           />
