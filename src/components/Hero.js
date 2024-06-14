@@ -31,7 +31,7 @@ export default function Hero() {
         loop
         playsInline
         className="absolute left-0 w-full object-cover"
-        style={{ height: "calc(100% + 57px - 100px)", top: 100 }}
+        style={{ height: "calc(100% + 57px - 100px)", bottom: -57 }}
       >
         <source src="/assets/video-home-bg.mp4" type="video/mp4" />
       </video>
