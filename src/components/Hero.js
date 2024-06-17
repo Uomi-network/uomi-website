@@ -46,15 +46,15 @@ export default function Hero() {
   const textAnimationClassName = "Hero__text-animation";
   return (
     <div className="flex-1 relative pt-6 md:pt-12 w-full h-full">
-      <div className="relative justify-center flex">
-        <p className={`z-40 text-3xl md:text-4xl text-white font-lighter text-center absolute font-mono px-6 pt-16 md:pt-0`}>
+      <div className="relative justify-center flex z-10">
+        <p className={`z-10 text-3xl md:text-4xl text-white font-lighter text-center absolute font-mono px-6 pt-16 md:pt-0`}>
           {renderTitle()}
         </p>
       </div>
 
       <div
         ref={videoContainerRef}
-        className="absolute left-0 w-full overflow-hidden bottom-[-57px]"
+        className="absolute z-0 left-0 w-full overflow-hidden bottom-[-57px]"
         style={{ height: "calc(100% + 57px)" }}
       >
         <video
