@@ -6,7 +6,8 @@ import PageTitle from "../../components/PageTitle";
 import PageContent from "../../components/PageContent";
 
 const html = `
-  <h2 style="text-align: center; margin-bottom: 80px;"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto;" /><span style="display: none">UOMI</span></h2>
+  <div style="text-align: center; margin-bottom: 80px;"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto;" /></div>
+  <h2>Creating unstoppable AI economic agents</h2>
   <p>
     Welcome to UOMI Network, the forefront of integrating artificial
     intelligence with blockchain technology to create autonomous economic
@@ -43,10 +44,7 @@ export default function Index() {
       </Head>
 
       <PageContainer>
-        <PageTitle>
-          Creating unstoppable <br /> AI economic agents
-        </PageTitle>
-        <PageContent className="mt-16 md:mt-32" html={html} />
+        <PageContent html={html} />
       </PageContainer>
     </>
   );

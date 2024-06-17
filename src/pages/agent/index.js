@@ -268,16 +268,7 @@ export default function Index() {
       </Head>
 
       <PageContainer>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="h-64 object-cover w-auto mx-auto"
-        >
-          <source src="/assets/video-agent.mp4" type="video/mp4" />
-        </video>
-        <PageContent className='mt-12' html={html} />
+        <PageContent html={html} />
       </PageContainer>
     </>
   );

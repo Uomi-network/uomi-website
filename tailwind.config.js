@@ -10,6 +10,10 @@ module.exports = {
       colors: {
         primary: '#2d3436',
       },
+      fontFamily: {
+        sans: ['Varela', 'sans-serif'],
+        mono: ['"Fira Code"', 'monospace'],
+      },
     },
   },
   plugins: [],

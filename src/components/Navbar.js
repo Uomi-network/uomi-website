@@ -49,7 +49,7 @@ export default function Navbar() {
     if (item.children) {
       return (
         <div className="group relative" key={key}>
-          <button className="hover:underline relative text-lg w-full block py-2 md:py-0 md:text-base">
+          <button className="hover:underline relative text-lg w-full block py-2 md:py-0 md:text-base font-mono">
             {item.title} <MdArrowDropDown className="absolute" fontSize={20} style={{ top: 0, right: -25 }} />
           </button>
           <div className="md:hidden group-hover:block md:absolute bg-black text-white pt-2">
@@ -63,7 +63,7 @@ export default function Navbar() {
       return (
         <Link
           href={item.href}
-          className="block hover:bg-primary px-2 py-1"
+          className="block hover:bg-primary px-2 py-1 font-mono"
           key={key}
         >
           {item.title}
@@ -74,7 +74,7 @@ export default function Navbar() {
     return (
       <Link
         href={item.href}
-        className="hover:underline text-lg w-full block py-2 md:py-0 md:text-base"
+        className="hover:underline text-lg w-full block py-2 md:py-0 md:text-base font-mono"
         key={key}
       >
         {item.title}

@@ -38,12 +38,16 @@ export default function PageLatex({ latex, className }) {
     </head>
     <body>
       <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
         body {
           color: white;
           overflow-x: hidden;
           width: 100%;
           margin: 0;
           padding: 0;
+          font-family: 'Varela', sans-serif;
         }
 
         body, .page {
@@ -74,6 +78,15 @@ export default function PageLatex({ latex, className }) {
           table {
             font-size: 0.8em;
           }
+        }
+
+        h1, h2, h3, h4, h5, h6, .title {
+          font-family: 'Fira Code', monospace;
+          font-weight: lighter;
+        }
+
+        p {
+          line-height: 1.5;
         }
       </style>
       <script>
