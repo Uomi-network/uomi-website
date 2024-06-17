@@ -56,8 +56,7 @@ correct execution of such computations is a complex challenge. It requires a del
 latency, computational overhead, and correctness guarantees.
 Traditionally, blockchain consensus methods require that all network participants verify whether
 state changes—such as balance adjustments or unspent transaction outputs—comply with the protocol-defined rules, and whether the block proposer has either performed significant computational work
-(Proof of Work, PoW)[Nak08] or holds a substantial stake in the network (Proof of Stake, PoS)[KN12]
-[BG17]. While theoretically possible, applying traditional consensus logic to the computation of LLMs
+(Proof of Work, PoW) or holds a substantial stake in the network (Proof of Stake, PoS). While theoretically possible, applying traditional consensus logic to the computation of LLMs
 and ML models would be practically infeasible due to the significant computational and data availability costs involved, which would scale linearly with the number of nodes participating in the consensus.
 A possible approach to solve such a problem is to generate an easily verifiable proof that the
 computation has been executed correctly. Just like in proof-of-work all of the network participants can
@@ -68,13 +67,12 @@ verify that an output y is the direct result of the execution of a specific AI m
 Although theoretically feasible, also this approach currently faces practical limitations that prevent its
 application in scenarios requiring intense computation, such as with LLMs, or where latency constraints
 demand responses within seconds. Such a limitation is well understood in the cryptocurrency space,
-in a recent article [But24], Vitalik Buterin has categorized it as ”Cryptographic overhead”. Currently,
+in a recent article, Vitalik Buterin has categorized it as ”Cryptographic overhead”. Currently,
 generating a ZK-SNARK proof for even a modestly sized LLM, with just 1 million parameters, takes
-approximately 1000 seconds [SCJ+24][ezk23]. This is significant, especially considering that lower
+approximately 1000 seconds. This is significant, especially considering that lower
 specification models in contemporary usage typically feature at least 7 billion parameters. Furthermore,
 the computational cost to generate such a proof is two to three orders of magnitude greater than the
-computation being verified, with a memory footprint potentially reaching terabytes [Lab23] [SCJ+24]
-[Lab24]. 
+computation being verified, with a memory footprint potentially reaching terabytes. 
 OPoC is a novel consensus algorithm designed to facilitate secure computation within a decentralized computing framework. This algorithm ensures that for any given computation function \( f() \) and input \( x \), there are robust statistical guarantees that \( f(x) = y \). Importantly, we integrate economic principles into the algorithm by leveraging token staking, which transforms these statistical assurances into tangible economic security. This economic security is crucial, as it underpins the integrity of interactions between AI models and smart contracts, particularly in environments where value is managed and the incentive to manipulate outcomes is significant due to the stakes involved. Optimized for resource-intensive computations, our algorithm is particularly adept at handling large language models and machine learning tasks, thereby enabling secure and reliable interactions between AI technologies and blockchain-based smart contracts.
 
 \subsection{Architecture}

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -20,8 +20,10 @@ body {
 .PageContent li
  {
   font-weight: medium;
-  margin-bottom: 33px;
-  font-family: 'Varela', sans-serif;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: justify;
 }
 
 .PageContent h2,
@@ -33,10 +35,6 @@ body {
   text-align: center;
   font-family: 'Fira Code', monospace;
   font-weight: lighter;
-}
-
-.PageContent p {
-  text-align: justify;
 }
 
 .PageLatex {
@@ -52,12 +50,12 @@ body {
 
 @keyframes pulse {
   0% {
-    opacity: 0.35;
+    opacity: 1;
   }
   50% {
-    opacity: 0.85;
+    opacity: 0.35;
   }
   100% {
-    opacity: 0.35;
+    opacity: 1;
   }
 }

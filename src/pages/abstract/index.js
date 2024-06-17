@@ -16,7 +16,6 @@ const html = `
     architecture, ensuring robust interactions between smart contracts and
     AI inferences.
   </p>
-  <h3>VISION</h3>
   <p>
     At UOMI, we envision a future where AI agents operate with genuine
     economic agency, driving innovation across various sectors including
@@ -25,7 +24,6 @@ const html = `
     EVM-compatible blockchain, paving the way for new economic models and
     opportunities.
   </p>
-  <h3>CORE TECHNOLOGY</h3>
   <p>
     UOMI Network leverages the Optimized Proof of Computation (OPoC)
     consensus algorithm, which ensures secure, efficient AI computation

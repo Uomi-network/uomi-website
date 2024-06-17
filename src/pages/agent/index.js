@@ -6,6 +6,7 @@ import PageTitle from "../../components/PageTitle";
 import PageContent from "../../components/PageContent";
 
 const html = `
+  <div style="text-align: center; margin-bottom: 80px;"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto;" /></div>
   <h2 style="text-align: center">Applications of Autonomous Economic AI Agents</h2>
 
   <p>

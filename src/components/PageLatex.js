@@ -39,7 +39,7 @@ export default function PageLatex({ latex, className }) {
     <body>
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
         body {
           color: white;
@@ -47,7 +47,7 @@ export default function PageLatex({ latex, className }) {
           width: 100%;
           margin: 0;
           padding: 0;
-          font-family: 'Varela', sans-serif;
+          font-family: 'Montserrat', sans-serif;
         }
 
         body, .page {
@@ -88,7 +88,7 @@ export default function PageLatex({ latex, className }) {
 
         p, .small {
           line-height: 1.5;
-          font-size: 16px;
+          font-size: 14px;
         }
 
         .title {
