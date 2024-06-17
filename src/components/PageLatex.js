@@ -83,10 +83,16 @@ export default function PageLatex({ latex, className }) {
         h1, h2, h3, h4, h5, h6, .title {
           font-family: 'Fira Code', monospace;
           font-weight: lighter;
+          text-align: center;
         }
 
-        p {
+        p, .small {
           line-height: 1.5;
+          font-size: 16px;
+        }
+
+        .title {
+          margin-bottom: 75px;
         }
       </style>
       <script>

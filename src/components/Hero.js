@@ -2,17 +2,17 @@ import React, { useRef, useEffect } from "react";
 import localFont from "next/font/local";
 import Link from "next/link";
 
-const druk = localFont({
-  variable: "--font-druk",
-  display: "swap",
-  src: [
-    {
-      path: "../assets/druk.woff2",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-});
+// const druk = localFont({
+//   variable: "--font-druk",
+//   display: "swap",
+//   src: [
+//     {
+//       path: "../assets/druk.woff2",
+//       weight: "400",
+//       style: "normal",
+//     },
+//   ],
+// });
 
 export default function Hero() {
   const videoContainerRef = useRef(null);
@@ -40,8 +40,8 @@ export default function Hero() {
   return (
     <div className="flex-1 relative pt-6 md:pt-12 w-full h-full">
       <div className="relative justify-center flex">
-        <p className={`z-10 text-3xl md:text-4xl text-white font-extrabold text-center absolute ${druk.className}`}>
-          U<span className={textAnimationClassName}>NSTOPPABLE</span> O<span className={textAnimationClassName}>PEN</span> <br /> M<span className={textAnimationClassName}>ACHINE</span> I<span className={textAnimationClassName}>NTELLIGENCE</span>
+        <p className={`z-10 text-3xl md:text-4xl text-white font-lighter text-center absolute font-mono`}>
+          U<span className={textAnimationClassName}>NSTOPPABLE</span> O<span className={textAnimationClassName}>PEN</span> M<span className={textAnimationClassName}>ACHINE</span> I<span className={textAnimationClassName}>NTELLIGENCE</span>
         </p>
       </div>
 
