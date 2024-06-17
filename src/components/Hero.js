@@ -24,9 +24,16 @@ export default function Hero() {
       videoTagRef.current.style.height = `${containerHeight}px`;
     }
 
+    document.body.addEventListener('click', () => {
+      videoTagRef.current.play();
+    })
+    document.body.addEventListener('touchstart', () => {
+      videoTagRef.current.play();
+    })
+
     const interval = setInterval(() => {
       setCounter((prevCounter) => prevCounter + 1);
-    }, 150)
+    }, 100)
 
     return () => clearInterval(interval);
   }, [])
