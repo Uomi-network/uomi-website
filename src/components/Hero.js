@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import { render } from "react-dom";
 
 const TITLE = "UNSTOPPABLE OPEN MACHINE INTELLIGENCE"
 
