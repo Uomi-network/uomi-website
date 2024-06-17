@@ -47,7 +47,7 @@ export default function Hero() {
   return (
     <div className="flex-1 relative pt-6 md:pt-12 w-full h-full">
       <div className="relative justify-center flex">
-        <p className={`z-10 text-3xl md:text-4xl text-white font-lighter text-center absolute font-mono`}>
+        <p className={`z-10 text-3xl md:text-4xl text-white font-lighter text-center absolute font-mono px-6 pt-16 md:pt-0`}>
           {renderTitle()}
         </p>
       </div>
