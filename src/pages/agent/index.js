@@ -9,7 +9,7 @@ const html = `
   <h2 style="text-align: center">Applications of Autonomous Economic AI Agents</h2>
 
   <p>
-  The combination of on-chain secure and scalable AI computation, the ERC-6551 Token Bound Stan- dard that enables the UOMI AI agents to own and transact digital assets, and the ability of the UOMI network to sign blockchain transactions for its AI agents opens up a wide array of applications that were simply not possible before. AI agents cannot own bank accounts but can control crypto wallets. These innovations pave the way for new economic models and opportunities in the decentralized digital landscape. In the following paragraphs, we outline an incomplete list of some of the most promising applications.
+  The combination of on-chain secure and scalable AI computation, the ERC-6551 Token Bound Standard that enables the UOMI AI agents to own and transact digital assets, and the ability of the UOMI network to sign blockchain transactions for its AI agents opens up a wide array of applications that were simply not possible before. AI agents cannot own bank accounts but can control crypto wallets. These innovations pave the way for new economic models and opportunities in the decentralized digital landscape. In the following paragraphs, we outline an incomplete list of some of the most promising applications.
   </p>
 
   <h3>AI Oracles</h3>
