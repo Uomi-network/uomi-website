@@ -53,6 +53,7 @@ export default function PageLatex({ latex, className }) {
         body, .page {
           max-width: 100% !important;
           min-width: 100% !important;
+          padding: 0 -2px !important;
         }
 
         img {
