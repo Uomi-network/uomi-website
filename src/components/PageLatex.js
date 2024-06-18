@@ -47,18 +47,21 @@ export default function PageLatex({ latex, className }) {
 
         body {
           color: white;
-          overflow-x: hidden;
+
           width: 100%;
           margin: 0;
           padding: 0;
           font-family: 'Montserrat', sans-serif;
         }
 
+        body, html {
+          overflow-x: hidden;
+          -webkit-overflow-scrolling: touch;
+        }
+
         body, .page {
           max-width: 100% !important;
           min-width: 100% !important;
-          padding: 0 -5px !important;
-          overflow-x: hidden !important;
         }
 
         img {
