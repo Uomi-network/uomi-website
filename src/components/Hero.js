@@ -5,9 +5,10 @@ const TITLE = "UNSTOPPABLE OPEN MACHINE INTELLIGENCE"
 export default function Hero() {
   const videoContainerRef = useRef(null);
   const videoTagRef = useRef(null);
+  const viseoSetupped = useRef(false);
   const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
+  const setupVideo = () => {
     if (!videoContainerRef.current || !videoTagRef.current) return;
 
     // set video tag width and height to match the container size and mantain the 16:9 aspect ratio
@@ -24,19 +25,35 @@ export default function Hero() {
       videoTagRef.current.style.height = `${containerHeight}px`;
     }
 
-    document.body.addEventListener('click', () => {
-      videoTagRef.current.play();
-    })
-    document.body.addEventListener('touchstart', () => {
-      videoTagRef.current.play();
-    })
+    viseoSetupped.current = true;
+  }
 
+  const playVideo = () => {
+    if (!videoTagRef.current) return;
+    videoTagRef.current.play();
+  }
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => prevCounter + 1);
     }, 100)
 
-    return () => clearInterval(interval);
+    window.addEventListener('resize', setupVideo);
+    document.body.addEventListener('click', playVideo);
+    document.body.addEventListener('touchstart', playVideo);
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('resize', setupVideo);
+      document.body.removeEventListener('click', playVideo);
+      document.body.removeEventListener('touchstart', playVideo);
+    }
   }, [])
+
+  useEffect(() => {
+    if (!viseoSetupped.current) {
+      setupVideo();
+    }
+  }, [counter])
 
   const renderTitle = () => {
     if (counter < TITLE.length) {
