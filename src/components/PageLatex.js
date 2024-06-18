@@ -41,6 +41,10 @@ export default function PageLatex({ latex, className }) {
         @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+        * {
+          box-sizing: border-box;
+        }
+
         body {
           color: white;
           overflow-x: hidden;
@@ -53,7 +57,8 @@ export default function PageLatex({ latex, className }) {
         body, .page {
           max-width: 100% !important;
           min-width: 100% !important;
-          padding: 0 -2px !important;
+          padding: 0 -5px !important;
+          overflow-x: hidden !important;
         }
 
         img {

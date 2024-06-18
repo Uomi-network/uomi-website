@@ -41,6 +41,7 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   min-height: 100vh;
+  overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
 }
 
