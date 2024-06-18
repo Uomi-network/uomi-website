@@ -49,7 +49,7 @@ export default function Navbar() {
     if (item.children) {
       return (
         <div className="group relative" key={key}>
-          <button className="hover:underline relative text-lg w-full block py-2 md:py-0 md:text-base font-mono">
+          <button className="opacity-75 md:opacity-100 md:hover:underline relative text-lg w-full block py-2 md:py-0 md:text-base font-mono">
             {item.title} <MdArrowDropDown className="absolute" fontSize={20} style={{ top: 0, right: -25 }} />
           </button>
           <div className="md:hidden group-hover:block md:absolute bg-black text-white pt-2">

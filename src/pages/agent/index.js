@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 
 import PageContainer from "../../components/PageContainer";
-import PageTitle from "../../components/PageTitle";
 import PageContent from "../../components/PageContent";
 
 const html = `

@@ -48,6 +48,8 @@ export default function PageLatex({ latex, className }) {
           margin: 0;
           padding: 0;
           font-family: 'Montserrat', sans-serif;
+          padding-left: 2px;
+          padding-right: 2px;
         }
 
         body, .page {
