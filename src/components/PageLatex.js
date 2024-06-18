@@ -87,6 +87,18 @@ export default function PageLatex({ latex, className }) {
           table {
             font-size: 0.8em;
           }
+          .katex-display {
+            font-size: 0.8em;
+          }
+        }
+
+        @media (max-width: 400px) {
+          table {
+            font-size: 0.7em;
+          }
+          .katex-display {
+            font-size: 0.7em;
+          }
         }
 
         h1, h2, h3, h4, h5, h6, .title {
