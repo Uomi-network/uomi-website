@@ -93,7 +93,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          className="object-cover absolute top-[100px] md:top-0 left-1/2 transform -translate-x-1/2"
+          className="object-cover absolute top-[100px] md:top-0 left-1/2 transform -translate-x-1/2 h-full w-auto"
         >
           <source src="/assets/video-home-bg.mp4" type="video/mp4" />
         </video>
