@@ -69,7 +69,13 @@ export default function Hero() {
 
   const textAnimationClassName = "Hero__text-animation";
   return (
-    <div className="flex-1 relative pt-6 md:pt-12 w-full h-full">
+    <div
+      className="flex-1 relative pt-6 md:pt-12 w-full h-full"
+      style={{
+        opacity: viseoSetupped.current ? 1 : 0,
+        transition: "opacity 0.5s",
+      }}
+    >
       <div className="relative justify-center flex z-10">
         <p className={`z-10 text-3xl md:text-4xl text-white font-lighter text-center absolute font-mono px-6 pt-16 md:pt-0`}>
           {renderTitle()}
