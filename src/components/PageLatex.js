@@ -193,8 +193,7 @@ export default function PageLatex({ latex, className }) {
           var viewer = document.getElementById("viewer")
           viewer.appendChild(generator.domFragment())
           replaceCustomComponents(viewer)
-          onResize()
-          setInterval(onResize, 1000)
+          setInterval(onResize, 500)
         }
         _()
       </script>
@@ -214,6 +213,7 @@ export default function PageLatex({ latex, className }) {
       style={{
         height: iframeHeight,
         opacity: iframeHeight > 100 ? 1 : 0,
+        transition: "opacity 0.5s",
       }}
       ref={iframeRef}
       src={iframeSrc}

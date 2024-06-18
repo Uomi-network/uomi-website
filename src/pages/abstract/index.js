@@ -5,7 +5,7 @@ import PageContainer from "../../components/PageContainer";
 import PageContent from "../../components/PageContent";
 
 const html = `
-  <div style="text-align: center; margin-bottom: 80px;"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto;" /></div>
+  <div style="text-align: center; margin-bottom: 80px;"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto; min-height: 52px;" /></div>
   <h2>Creating unstoppable AI economic agents</h2>
   <p>
     Welcome to UOMI Network, the forefront of integrating artificial
