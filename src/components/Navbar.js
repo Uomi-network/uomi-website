@@ -34,8 +34,8 @@ export default function Navbar() {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url) => {
-      setIsMobileMenuOpen(false);
+    const handleRouteChange = (_url) => {
+      setTimeout(() => setIsMobileMenuOpen(false), 250)
     }
 
     router.events.on('routeChangeStart', handleRouteChange)
@@ -43,7 +43,7 @@ export default function Navbar() {
     return () => {
       router.events.off('routeChangeStart', handleRouteChange)
     }
-  }, [])
+  }, [router.events])
 
   const renderMenuItem = (item, key, isSubmenu = false) => {
     if (item.children) {
@@ -131,27 +131,25 @@ export default function Navbar() {
         </div>
       </Container>
 
-      {isMobileMenuOpen && (
-        <div className="absolute top-0 left-0 w-full h-screen bg-black text-white z-30 flex flex-col justify-center items-center">
-          <Link href="/">
-            <Image
-              src="/assets/logo.svg"
-              alt="Logo"
-              className="w-48 h-24"
-              width={100}
-              height={36}
-            />
-          </Link>
+      <div className={`absolute top-0 left-0 w-full h-screen bg-black text-white z-30 flex flex-col justify-center items-center transition-all duration-300  ${isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"}`}>
+        <Link href="/">
+          <Image
+            src="/assets/logo.svg"
+            alt="Logo"
+            className="w-48 h-24"
+            width={100}
+            height={36}
+          />
+        </Link>
 
-          <div className="text-center w-full">
-            {MENU_ITEMS.map((item, index) => (
-              <div className="my-4" key={index}>
-                {renderMenuItem(item, index)}
-              </div>
-            ))}
-          </div>
+        <div className="text-center w-full">
+          {MENU_ITEMS.map((item, index) => (
+            <div className="my-4" key={index}>
+              {renderMenuItem(item, index)}
+            </div>
+          ))}
         </div>
-      )}
+      </div>
     </nav>
   );
 };

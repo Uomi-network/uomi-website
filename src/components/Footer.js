@@ -23,7 +23,7 @@ const SOCIAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="w-full z-50">
+    <footer className="w-full z-40">
       <Container className="py-4 w-full">
         <div className="flex justify-center md:justify-start items-center">
           {SOCIAL_LINKS.map((link, index) => (
