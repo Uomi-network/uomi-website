@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Uomi network</title>
+        <title>Uomi Network</title>
         <meta
           name="description"
           content="UOMI Network - Creating unstoppable AI economic agents."
