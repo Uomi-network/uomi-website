@@ -43,15 +43,15 @@ export default function Index() {
       </Head>
 
       <div
-        className="flex-1 relative pt-0 md:pt-12 w-full h-full"
+        className="flex-1 flex flex-col relative w-full h-full "
       >
-        <div className="relative justify-center flex z-10">
-          <p className={`z-10 text-3xl md:text-4xl text-white font-lighter text-center absolute font-mono px-6`}>
+        <div className="relative justify-center items-center flex px-6 h-[125px]">
+          <p className={`text-3xl md:text-4xl text-white font-lighter text-center font-mono`}>
             {renderTitle()}
           </p>
         </div>
 
-        <Hero3d className="absolute top-0 left-0 w-full h-full pt-24" />
+        <Hero3d className="relative flex-1 w-full h-full" />
       </div>
     </>
   );

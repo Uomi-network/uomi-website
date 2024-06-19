@@ -31,7 +31,7 @@ export default function Hero3d({ className }) {
 
   return (
     <div className={className}>
-      <div ref={container3dRef} className="w-full h-full bg-black"></div>
+      <div ref={container3dRef} className="absolute top-0 left-0 w-full h-full bg-black"></div>
     </div>
   )
 }
