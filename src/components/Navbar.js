@@ -29,6 +29,25 @@ const MENU_ITEMS = [
   },
 ]
 
+const MENU_ITEMS_MOBILE = [
+  {
+    title: "ABOUT",
+    href: "/abstract",
+  },
+  {
+    title: "CONSENSUS",
+    href: "/consensus",
+  },
+  {
+    title: "WHITEPAPER",
+    href: "/whitepaper",
+  },
+  {
+    title: "AGENTS",
+    href: "/agent",
+  },
+]
+
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const router = useRouter();
@@ -143,7 +162,7 @@ export default function Navbar() {
         </Link>
 
         <div className="text-center w-full">
-          {MENU_ITEMS.map((item, index) => (
+          {MENU_ITEMS_MOBILE.map((item, index) => (
             <div className="my-4" key={index}>
               {renderMenuItem(item, index)}
             </div>
