@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 const MENU_ITEMS = [
   {
     title: "ABOUT",
-    href: "/abstract",
+    href: "/about",
   },
   {
     title: "RESEARCH",
@@ -24,15 +24,15 @@ const MENU_ITEMS = [
     ]
   },
   {
-    title: "AGENTS",
-    href: "/agent",
+    title: "APPLICATIONS",
+    href: "/applications",
   },
 ]
 
 const MENU_ITEMS_MOBILE = [
   {
     title: "ABOUT",
-    href: "/abstract",
+    href: "/about",
   },
   {
     title: "CONSENSUS",
@@ -43,8 +43,8 @@ const MENU_ITEMS_MOBILE = [
     href: "/whitepaper",
   },
   {
-    title: "AGENTS",
-    href: "/agent",
+    title: "APPLICATIONS",
+    href: "/applications",
   },
 ]
 
