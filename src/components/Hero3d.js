@@ -17,11 +17,11 @@ import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
 import Tweakpane from 'tweakpane'
 
-export default function Hero3d({ className }) {
+export default function Hero3d({ className, onModelLoaded = () => {} }) {
   const container3dRef = useRef(null);
 
   useEffect(() => {
-    const app3d = new App3D(container3dRef.current)
+    const app3d = new App3D(container3dRef.current, onModelLoaded)
     app3d.init()
 
     return () => {
@@ -37,8 +37,9 @@ export default function Hero3d({ className }) {
 }
 
 class App3D {
-  constructor(container) {
+  constructor(container, onModelLoaded = () => {}) {
     this.container = container
+    this.onModelLoaded = onModelLoaded
 
     this.config = {
       color_1: [107, 17, 210],
@@ -69,6 +70,8 @@ class App3D {
         this._update()
         this._render()
       })
+
+      this.onModelLoaded()
     })
   }
 

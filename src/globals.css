@@ -43,10 +43,9 @@ body {
   min-height: 100vh;
 }
 
-.Hero__text-animation {
+.text-animation-pulse {
   animation: pulse 10s infinite;
 }
-
 @keyframes pulse {
   0% {
     opacity: 1;

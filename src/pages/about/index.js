@@ -2,10 +2,10 @@ import React from "react";
 import Head from "next/head";
 
 import PageContainer from "../../components/PageContainer";
+import PageHero from "../../components/PageHero";
 import PageContent from "../../components/PageContent";
 
 const html = `
-  <div style="text-align: center; margin-bottom: 80px;"><img src="/assets/logo-lines.svg" alt="Abstract" style="width: 200px; margin: auto; min-height: 52px;" /></div>
   <h2>Creating unstoppable AI economic agents</h2>
   <p>
     Welcome to UOMI Network, the forefront of integrating artificial
@@ -41,6 +41,7 @@ export default function Index() {
       </Head>
 
       <PageContainer>
+        <PageHero />
         <PageContent html={html} />
       </PageContainer>
     </>
