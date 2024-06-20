@@ -45,6 +45,16 @@ export default function Index() {
       </Head>
 
       <div
+        className="fixed top-0 left-0 w-full h-full bg-black flex justify-center items-center"
+        style={{
+          opacity: heroModelLoaded.current ? 0 : 1,
+          transition: "opacity 0.5s",
+        }}
+      >
+        <div class="loader"><div></div><div></div></div>
+      </div>
+
+      <div
         className="flex-1 flex flex-col relative w-full h-full"
         style={{
           opacity: heroModelLoaded.current ? 1 : 0,
