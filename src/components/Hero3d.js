@@ -160,6 +160,11 @@ class App3D {
     this.controls = new OrbitControls(this.camera, this.renderer.domElement)
     this.controls.enableDamping = true
     this.controls.dampingFactor = 0.05
+    this.controls.enablePan = false // Disable panning
+    this.controls.enableZoom = false // Disable zooming
+    this.controls.enableRotate = true // Enable rotation
+    this.controls.minPolarAngle = Math.PI / 2 // Limit vertical rotation
+    this.controls.maxPolarAngle = Math.PI / 2 // Limit vertical rotation
   }
 
   _createClock() {
