@@ -35,7 +35,7 @@ export default function Hero3d({ className, onModelLoaded = () => {} }) {
 
   return (
     <div className={className}>
-      <div ref={container3dRef} className="absolute top-0 left-0 w-full h-full bg-black pointer-events-none md:pointer-events-auto"></div>
+      <div ref={container3dRef} className="absolute top-0 left-0 w-full h-full bg-black"></div>
     </div>
   )
 }
