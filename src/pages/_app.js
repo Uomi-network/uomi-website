@@ -48,7 +48,7 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
         <link rel="icon" sizes="512x512" href="/android-icon-512x512.png"/>
       </Head>
       <main
-        className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
+        className={`flex min-h-[calc(100dvh)] flex-col items-center justify-between ${inter.className}`}
       >
         <Navbar />
 
