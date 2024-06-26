@@ -22,10 +22,14 @@ export default function Hero3d({ className, onModelLoaded = () => {} }) {
 
   useEffect(() => {
     const app3d = new App3D(container3dRef.current, onModelLoaded)
-    app3d.init()
+    setTimeout(() => app3d.init(), 250)
 
     return () => {
-      app3d.destroy()
+      try {
+        app3d.destroy()
+      } catch (e) {
+        console.error(e)
+      }
     }
   }, [])
 
