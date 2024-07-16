@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Head from "next/head";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import dynamic from 'next/dynamic'
 const Hero3d = dynamic(() => import('../components/Hero3d'), { ssr: false })
@@ -51,7 +52,7 @@ export default function Index() {
           transition: "opacity 0.5s",
         }}
       >
-        <div class="loader"><div></div><div></div></div>
+        <div className="loader"><div></div><div></div></div>
       </div>
 
       <div
@@ -74,6 +75,8 @@ export default function Index() {
           }}
         />
       </div>
+
+      <GoogleAnalytics gaId="G-6RC95X38DQ" />
     </>
   );
 }
