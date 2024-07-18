@@ -23,7 +23,7 @@
 \begin{abstract}
 
 
-Public blockchains like Bitcoin and Ethereum can be seen as self-replicating machines, organisms that leverage economic incentives to encourage human participation in their operation and expansion. This paper explores the potential integration of artificial intelligence into these systems, enabling the creation of autonomous economic agents. We propose a novel consensus architecture for a layer-one blockchain designed to embed secure AI computation while minimizing trust assumptions and computational overhead. This secure computing framework, built on the Optimized Proof of Computation (OPoC) consensus algorithm, enables reliable interactions between smart contracts and AI inferences, facilitating the development of self-sustaining AI economic agents. These entities are represented as NFTs on any EVM-compatible blockchain, possessing the capability to transact crypto-assets autonomously and cover their own computational expenses. By leveraging the OPoC consensus, we ensure robust security and economic incentives, fostering a new generation of blockchain-integrated AI systems.
+Public blockchains like Bitcoin and Ethereum can be seen as self-replicating machines, organisms that leverage economic incentives to encourage human participation in their operation and expansion. This paper explores the potential integration of artificial intelligence into these systems, enabling the creation of autonomous economic agents. We propose a novel consensus architecture for a layer-one blockchain designed to embed secure AI computation while minimizing trust assumptions and computational overhead. This secure computing framework, built on the Optimized Proof of Computation (OPoC) consensus algorithm, enables reliable interactions between smart contracts and AI inferences, facilitating the development of self-sustaining AI economic agents. These entities are represented as NFTs on any blockchain, possessing the capability to transact crypto-assets autonomously and cover their own computational expenses. By leveraging the OPoC consensus, we ensure robust security and economic incentives, fostering a new generation of blockchain-integrated AI systems.
 
 
 \end{abstract}
@@ -368,15 +368,24 @@ Since the keys are periodically refreshed, if an attacker manages to compromise 
 \section{Applications of Autonomous Economic AI Agents}
 
 
-The combination of on-chain secure and scalable AI computation, the ERC-6551 Token Bound Standard that enables the UOMI AI agents to own and transact digital assets, and the ability of the UOMI network to sign blockchain transactions for its AI agents opens up a wide array of applications that were simply not possible before. AI agents cannot own bank accounts but can control crypto wallets.
-These innovations pave the way for new economic models and opportunities in the decentralized digital landscape. In the following paragraphs, we outline an incomplete list of some of the most promising applications. 
+The UOMI network leverages a powerful combination of on-chain secure and scalable AI computation, the ERC-6551 Token Bound Standard, and the network's ability to sign blockchain transactions for its AI agents. This convergence opens up a wide array of applications that were previously unimaginable. While AI agents cannot own traditional bank accounts, they can control crypto wallets, paving the way for new paradigms.
+Just like for AI, the applications of the UOMI Network can be categorized into two main areas: General Applications and Narrow Applications.
 
-\subsection{AI Oracles}
+\subsection{General Application}
+
+The future of AI lies in agentic frameworks. Influential papers such as "Mixture of Agents" and Aschenbrenner’s "Situational Awareness" highlight this trajectory. Today, we already see the emergence of agentic frameworks like BabyAGI and AutoGPT. These frameworks, combined with the  trajectory of frontier base models pointing beyond the chatbot paradigm towards AI agents, entails a new era for generative AI models capabilities.
+
+The UOMI Network is designed for this future of agentic generative AI models. It enables AI agents to transcend simulated environments and make a tangible impact in the real world through economic agency — the ability to control digital assets. Public blockchains incentivize human participation in their operation and expansion through economic incentives. Similarly, UOMI Network-enabled agents represent a new form of digital life, capable of generating value for humans and covering their own computational expenses within the network.
+
+\subsection{Narrow applications: an incomplete list of some of the most promising use cases
+}
+
+\subsubsection{AI Oracles}
 
 An AI Oracle serves as a bridge between the blockchain and the external world, providing reliable, tamper-proof, and interpreted data feeds that smart contracts can use to make informed decisions. Traditional oracles such as Chainlink relay information such as financial data, weather updates, or sports results, which are then used in decentralized applications (dApps) for various purposes, such as triggering contract conditions or executing trades. With AI integration, oracles can perform more sophisticated tasks, such as interpreting complex datasets, conducting real-time analytics, and making predictive inferences. This means going far beyond the mere bridging of external data to the blockchain by enabling on-chain intelligence of those data. For instance, an AI Oracle could analyze social media trends to predict stock market movements or assess satellite images to decide if an insured event happened or not, all of this without humans in the loop. These AI-enhanced oracles ensure that smart contracts have not only access to high-quality, real-time data but also the actionable interpretation of those, thereby expanding the scope and reliability of decentralized applications. AI oracles are the cornerstone towards fully automated and economically empowered AI systems.
 
 
-\subsection{AI Managed Decentralized Autonomous Organization (DAO) }
+\subsubsection{AI Managed Decentralized Autonomous Organization (DAO) }
 
 A Decentralized Autonomous Organization (DAO) is a blockchain-based entity governed by smart contracts and collective voting. There are two main intersections between DAOs and AI that are enabled by UOMI network:
 
@@ -390,7 +399,7 @@ A Decentralized Autonomous Organization (DAO) is a blockchain-based entity gover
 
 \end{itemize}
 
-\subsection{Expanding smart contract design space}
+\subsubsection{Expanding smart contract design space}
 
 Under a traditional smart contract paradigm, among the universe of all possible “contracts” only the subset of those that are reducible to formal logic could be transposed on-chain in the form of a smart-contract. The introduction of on-chain secure AI computation enables more complex and nuanced agreements to be automated as smart contracts having onchain LLMs acting as a third party interpreting a loosely defined concept or event.
 Consider the following examples:
@@ -410,29 +419,29 @@ None of these conditions can be formally defined and included in a traditional s
 
 
 
-\subsection{Fully automated Blockchain Trusts}
+\subsubsection{Fully automated Blockchain Trusts}
 
 A Trust is a fiduciary arrangement where one party, known as the trustor or grantor, transfers ownership of assets to another party, known as the trustee, who manages those assets for the benefit of a third party, known as the beneficiary. Trusts are commonly used in estate planning to ensure that assets are managed and distributed according to the trustor’s wishes, both during their lifetime and after their death. The Trust deeds, defining the rules and the scope of the Trust, are nuanced and difficult to reduce to the formal logic smart contracts require to operate. The UOMI network, enabling secure AI computation, allows for the on-chain existence of such fiduciary arrangements by substituting the trustee interpreting and executing the trustor wishes with AIs that can interpret the trust deed and transact the digital assets it controls accordingly. Fully automated Blockchain trusts are a new kind of entity, built by combining human will with the interpretation and enaction capabilities of on-chain LLMs. 
 
-\subsection{Adding Ricardian safeguards to smart contracts}
+\subsubsection{Adding Ricardian safeguards to smart contracts}
 
 Moving from the first conceptualizations of smart contracts from Nick Szabo to the actual implementations of those with Ethereum and other Turing complete blockchains, we had the opportunity to factually test what are the strengths and the limitations of smart-contracts. The “code is law” paradigm that grants objectivity and disintermediation in the execution of contracts creates a new philosophical dilemma: what if the intent of the smart contract is not correctly encoded in the computer program published on the blockchain? What if there is a bug in the code? Rather than just a philosophical dilemma, such an issue emerged multiple times in the blockchain space, with the Ethereum DAO HACK as an archetype of such a dilemma. A potential mitigation of this dilemma has been proposed by Dan Larimer, founder of EOS, with the introduction of Ricardian contracts, a concept that was first introduced by Ian Grigg who described those as follows: “A Ricardian contract is a digital contract that defines the terms and conditions of interaction, between two or more peers, that is cryptographically signed and verified. Importantly it is both human and machine readable and digitally signed”. Such an additional human-readable text explaining the intent of the code can clearly separate the correct interaction with a smart contract code from an exploit of a bug in it. Yet it requires human intervention and interpretation to solve the dispute thus defeating some of the most important features of smart contracts, their objectivity and automatic execution. With the introduction of on-chain AI systems, we can imagine AI agents that control if the execution of a smart contract code conflicts with the Ricardian description of what the smart contract is supposed to do. This adds an additional and flexible security layer over the purely mechanical rules expressed by smart contract code. 
 
 
-\subsection{AI Digital Artist}
+\subsubsection{AI Digital Artist}
 
 An AI Digital Artist leverages machine learning models to create original artwork, music, or other forms of digital content. Considering the capability of the UOMI network to sign blockchain transactions for the AI agents, these AI-generated pieces can be minted as NFTs, ensuring ownership, authenticity, and provenance on the blockchain. The AI Digital Artist can learn from vast datasets of existing artworks to develop its own unique style, producing high-quality, novel creations that can be sold or auctioned in digital marketplaces. This capability democratizes the creation of art, allowing for diverse and innovative artistic expressions. Furthermore, the AI Digital Artist can interact with buyers, customize pieces based on user preferences, and even collaborate with human artists in real time. By requesting crypto payments for each creation, the AI Digital Artist can generate enough revenue to pay for its own computational expenses, thus operating indefinitely. New economic opportunities emerge for artists and collectors alike, fostering a vibrant and inclusive digital art ecosystem. 
 
-\subsection{AI Companion}
+\subsubsection{AI Companion}
 
 AI Companions are advanced AI entities secured on-chain that offer personalized interactions tailored to individual needs, evolving over time to become more attuned to users’ personalities and preferences. As digital friends, they engage in meaningful conversations, provide emotional support, and share daily activities. As personal assistants, they manage schedules, set reminders, suggest activities, and offer educational content, ensuring secure handling of personal data while learning to offer increasingly personalized assistance. For those seeking deeper connections, AI Companions can function as virtual boyfriends or girlfriends, providing a sense of intimacy and partnership through thoughtful conversations and shared interests. Those entities, represented by NFTs can be directly owned by users or can be publicly accessible. Publicly accessible AI companions can become economically self-sustainable through the value they generate for their users,  they can monetize interactions, such as offering personalized advice or exclusive content, creating a direct revenue stream that supports their operation and development. Additionally, AI Companions can be bought, sold, or traded in digital marketplaces, providing an economic layer where owners can monetize their unique personalities, skills, and relationships.
 
-\subsection{AI Gaming NPC}
+\subsubsection{AI Gaming NPC}
 
 
 In the gaming industry, AI-powered Non-Player Characters (NPCs) can significantly enhance the gameplay experience by providing more realistic, adaptive, and engaging interactions. These AI NPCs can learn from player behavior, adapt their strategies, and contribute to dynamic and immersive game worlds. On the blockchain, AI NPCs can be represented as NFTs, enabling unique, persistent, and tradable in-game characters. Players can own, customize, and monetize their AI NPCs, creating new revenue streams and adding value to the gaming ecosystem. Moreover, AI NPCs, being able to own digital assets themselves through the ERC-6551 standard, can participate in decentralized gaming economies, autonomously trade in-game assets, or even compete in player-vs-player environments. By integrating AI into gaming, developers can create richer, more interactive experiences that adapt to player preferences and actions, fostering deeper engagement and enjoyment. Finally, AI NPCs can interact with each other, creating independently evolving games and, more generally, virtual societies, creating a digital "Westworld".
 
-\subsection{Decentralized Finance (DeFi) AI Trader}
+\subsubsection{Decentralized Finance (DeFi) AI Trader}
 
 
 A Decentralized Finance (DeFi) AI Trader utilizes advanced machine learning algorithms to analyze market trends, predict price movements, and execute trades autonomously on decentralized exchanges (DEXs). This AI agent can be represented as an NFT, ensuring transparency, accountability, and ownership. The AI Trader can continuously monitor various financial metrics, news, and market signals to make informed trading decisions, optimizing for maximum returns while managing risk. Additionally, it can engage in arbitrage opportunities, liquidity provision, and yield farming strategies, adapting to market conditions in real time. If its strategies are successful the AI agent can generate enough value to pay for its own computational expenses and keep operating indefinitely on the blockchain.
@@ -444,34 +453,44 @@ A Decentralized Finance (DeFi) AI Trader utilizes advanced machine learning algo
 
 \subsection{UOMI Token Emission}
 
-The UOMI Network will issue a total of 21 billion tokens. A quantity of 5,684,970,703 tokens will be pre-minted to bootstrap the network’s liquidity, support the governance DAO, and enable the staking requirements to run the nodes. The remaining tokens will be gradually released over a 20-year period to incentivize nodes to execute computations, encourage stakers to select the most effective node operators, and engage token holders in governance activities. At its launch, the network will issue 10.5 million tokens every 24-hour epoch. The max supply cap is granted by a 2 years halving schedule for the token emission of each epoch. Here below is the issuance schedule detailing rewards per epoch and total and cumulative issuance per year; the epoch reward will start at the launch of the main-net beta scheduled for the 4th quarter 2024.
+The UOMI Network will issue a total of 21 billion tokens. A quantity of 4,919,219,238 tokens will be pre-minted to bootstrap the network’s liquidity, support the governance DAO, and enable the staking requirements to run the nodes. The remaining tokens will be gradually released over a 30-year period to incentivize nodes to execute computations, encourage stakers to select the most effective node operators, and engage token holders in governance activities. At its launch, the network will issue 7,350,000 tokens every 24-hour epoch. The max supply cap is granted by a 3 years halving schedule for the token emission of each epoch. Here below is the issuance schedule detailing rewards per epoch and total and cumulative issuance per year; the epoch reward will start at the launch of the main-net beta scheduled for the 4th quarter 2024.
 
 \begin{center}
 ***
 "type": "table",
 "headers": ["Year (end)", "Epoch Reward", "Emission by year", "Total Supply"],
 "rows": [
-  [0, "", 5684970703, 5684970703],
-  [1, 10500000, 3832500000, 9517470703],
-  [2, 10500000, 3832500000, 13349970703],
-  [3, 5250000, 1916250000, 15266220703],
-  [4, 5250000, 1916250000, 17182470703],
-  [5, 2625000, 958125000, 18140595703],
-  [6, 2625000, 958125000, 19098720703],
-  [7, 1312500, 479062500, 19577783203],
-  [8, 1312500, 479062500, 20056845703],
-  [9, 656250, 239531250, 20296376953],
-  [10, 656250, 239531250, 20535908203],
-  [11, 328125, 119765625, 20655673828],
-  [12, 328125, 119765625, 20775439453],
-  [13, 164063, 59882813, 20835322266],
-  [14, 164063, 59882813, 20895205078],
-  [15, 82031, 29941406, 20925146484],
-  [16, 82031, 29941406, 20955087891],
-  [17, 41016, 14970703, 20970058594],
-  [18, 41016, 14970703, 20985029297],
-  [19, 20508, 7485352, 20992514648],
-  [20, 20508, 7485352, 21000000000]
+  [0, "", 4919219238, 4919219238],
+  [1, 7350000, 2682750000, 7601969238],
+  [2, 7350000, 2682750000, 10284719238],
+  [3, 7350000, 2682750000, 12967469238],
+  [4, 3675000, 1341375000, 14308844238],
+  [5, 3675000, 1341375000, 15650219238],
+  [6, 3675000, 1341375000, 16991594238],
+  [7, 1837500, 670687500, 17662281738],
+  [8, 1837500, 670687500, 18332969238],
+  [9, 1837500, 670687500, 19003656738],
+  [10, 918750, 335343750, 19339000488],
+  [11, 918750, 335343750, 19674344238],
+  [12, 918750, 335343750, 20009687988],
+  [13, 459375, 167671875, 20177359863],
+  [14, 459375, 167671875, 20345031738],
+  [15, 459375, 167671875, 20512703613],
+  [16, 229688, 83835938, 20596539551],
+  [17, 229688, 83835938, 20680375488],
+  [18, 229688, 83835938, 20764211426],
+  [19, 114844, 41917969, 20806129395],
+  [20, 114844, 41917969, 20848047363],
+  [21, 114844, 41917969, 20889965332],
+  [22, 57422, 20958984, 20910924316],
+  [23, 57422, 20958984, 20931883301],
+  [24, 57422, 20958984, 20952842285],
+  [25, 28711, 10479492, 20963321777],
+  [26, 28711, 10479492, 20973801270],
+  [27, 28711, 10479492, 20984280762],
+  [28, 14355, 5239746, 20989520508],
+  [29, 14355, 5239746, 20994760254],
+  [30, 14355, 5239746, 21000000000]
 ]
 ***
 \end{center}
@@ -485,11 +504,9 @@ In order to discourage Byzantine behavior among nodes utilizing both the Proof o
 The emission of each epoch \(T\) is completely distributed at the epoch's end to the network participants that met the staking criteria and complied with the protocol consensus rules in epochs \( T_{-1} \) and \(T_0\). Only in the case of inactivity leak, described in the former chapters rewards are not distributed. It is not necessary that a validator produced any inference under OPoC during the epoch to be eligible for the rewards, since the availability of the computing power has a value - and a cost for the provider - whether it is used or not. 
 Yet, in case a validator is randomly selected to run a computation, and it does not perform it - inactivity leak -, he will be slashed by an amount equal to issuance that would have been assigned to him in case it did perform the computation correctly. No rewards will be distributed to such a validator until he is selected again to run a computation and perform it correctly. In case a disagreement on a computation arises, all of the stakes of the byzantine validators will be slashed. The slashing rules apply to both direct and delegated staking. Such an equivalence in the treatment of direct and delegated stakers ensures that the latter has the incentive to delegate to honest validators.
 
-
-The minimum direct staking requirement to run a node is 8,000,000 UOMI tokens, while the maximum amount of staked tokens a node operator can earn rewards on is 16,000,000 UOMI tokens. Balances exceeding the maximum staking amount will not account for the calculation of the share of issuance distribution. Such a limit ensures that there is limited variability in the value at stake for each node, avoiding excessive incentive extraction by single actors and enforcing a comparable value at risk for each validator.
-Issuance rewards can be withdrawn by node operators only once they reach the amount of 16,000,000 staked tokens. Such a rule facilitates the onboarding of new node operators by decreasing the entry barrier to 8,000,000 UOMI tokens, yet it allows for the maximization of capital at stake and, thus, economic assurances of both the POS and OPoC consensus mechanisms. It’s also worth to mention that such a rule doubles the protocol’s direct staking “working capital”, that is the number of tokens absorbed by the network from the market.
+The minimum direct staking requirement to run a node is 8,000,000 UOMI tokens. Balances exceeding the maximum staking amount will not account for the calculation of the share of issuance distribution. Such a limit ensures that there is limited variability in the value at stake for each node, avoiding excessive incentive extraction by single actors and enforcing a comparable value at risk for each validator.
+Issuance rewards can be withdrawn by node operators only once they reach the amount of 4,000,000 token rewards. Such a rule facilitates the onboarding of new node operators by decreasing the entry barrier to 8,000,000 UOMI tokens, yet it allows for the maximization of capital at stake and, thus, economic assurances of both the POS and OPoC consensus mechanisms. It’s also worth to mention that such a rule increases the protocol’s direct staking “working capital”, that is the number of tokens absorbed by the network from the market.
 Taken issued during each epoch - excluding the inactivity leak epochs - will be distributed as follows to eligible node operators (direct stakers), delegate stakers and veUOMI holders:
-
 
 \begin{itemize}
 \item Direct stakers: \(60\% \)
@@ -557,7 +574,7 @@ In the first phase, the value of MC i and MC o will be decided for each model fa
 \[\text{Computational Complexity} = \text{Image\_size} \times \text{N\_steps} \times \text{MC\_o} \]
 
 Since the nodes performing the inferences are already rewarded by the UOMI token issuance, a variable percentage of the tokens gained by the network with the inference payments will be burned to decrease token supply and sustain the economic value of UOMI token, while the rest will be distributed to the Nodes of the network. 
-Token burn will go from \( 100\%\) at the launch of the network to \( 0\%\) in the 20th year by following the UOMI token halving emission schedule, thus gradually replacing the emission incentive for the nodes with the fees generated by inference requests. 
+Token burn will go from \( 100\%\) at the launch of the network to \( 0\%\) in the 30th year by following the UOMI token halving emission schedule, thus gradually replacing the emission incentive for the nodes with the fees generated by inference requests. 
 
 
 
@@ -567,26 +584,36 @@ Token burn will go from \( 100\%\) at the launch of the network to \( 0\%\) in t
 "type": "table",
 "headers": ["Year", "Epoch Emission", "Inference fee burn"],
 "rows": [
-  [1, 10500000, "100.00\%"],
-  [2, 10500000, "100.00\%"],
-  [3, 5250000, "50.00\%"],
-  [4, 5250000, "50.00\%"],
-  [5, 2625000, "25.00\%"],
-  [6, 2625000, "25.00\%"],
-  [7, 1312500, "12.50\%"],
-  [8, 1312500, "12.50\%"],
-  [9, 656250, "6.25\%"],
-  [10, 656250, "6.25\%"],
-  [11, 328125, "3.13\%"],
-  [12, 328125, "3.13\%"],
-  [13, 164063, "1.56\%"],
-  [14, 164063, "1.56\%"],
-  [15, 82031, "0.78\%"],
-  [16, 82031, "0.78\%"],
-  [17, 41016, "0.39\%"],
-  [18, 41016, "0.39\%"],
-  [19, 20508, "0.20\%"],
-  [20, 20508, "0.20\%"]
+  [1, 7350000, 100.0],
+  [2, 7350000, 100.0],
+  [3, 7350000, 100.0],
+  [4, 3675000, 66.7],
+  [5, 3675000, 66.7],
+  [6, 3675000, 66.7],
+  [7, 1837500, 44.4],
+  [8, 1837500, 44.4],
+  [9, 1837500, 44.4],
+  [10, 918750, 29.6],
+  [11, 918750, 29.6],
+  [12, 918750, 29.6],
+  [13, 459375, 19.8],
+  [14, 459375, 19.8],
+  [15, 459375, 19.8],
+  [16, 229688, 13.2],
+  [17, 229688, 13.2],
+  [18, 229688, 13.2],
+  [19, 114844, 8.8],
+  [20, 114844, 8.8],
+  [21, 114844, 8.8],
+  [22, 57422, 5.9],
+  [23, 57422, 5.9],
+  [24, 57422, 5.9],
+  [25, 28711, 3.9],
+  [26, 28711, 3.9],
+  [27, 28711, 3.9],
+  [28, 14355, 2.6],
+  [29, 14355, 2.6],
+  [30, 14355, 2.6]
 ]
 ***
 \end{center}

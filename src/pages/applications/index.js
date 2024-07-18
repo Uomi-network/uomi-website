@@ -9,10 +9,19 @@ const html = `
   <h2 style="text-align: center">Applications of Autonomous Economic AI Agents</h2>
 
   <p>
-  The combination of on-chain secure and scalable AI computation, the ERC-6551 Token Bound Standard that enables the UOMI AI agents to own and transact digital assets, and the ability of the UOMI network to sign blockchain transactions for its AI agents opens up a wide array of applications that were simply not possible before. AI agents cannot own bank accounts but can control crypto wallets. These innovations pave the way for new economic models and opportunities in the decentralized digital landscape. In the following paragraphs, we outline an incomplete list of some of the most promising applications.
+  The UOMI network leverages a powerful combination of on-chain secure and scalable AI computation, the ERC-6551 Token Bound Standard, and the network's ability to sign blockchain transactions for its AI agents. This convergence opens up a wide array of applications that were previously unimaginable. While AI agents cannot own traditional bank accounts, they can control crypto wallets, paving the way for new paradigms.
+  Just like for AI, the applications of the UOMI Network can be categorized into two main areas: General Applications and Narrow Applications.
   </p>
 
-  <h3>AI Oracles</h3>
+  <h3>General Applications</h3>
+  <p>
+  The future of AI lies in agentic frameworks. Influential papers such as "Mixture of Agents" and Aschenbrenner’s "Situational Awareness" highlight this trajectory. Today, we already see the emergence of agentic frameworks like BabyAGI and AutoGPT. These frameworks, combined with the  trajectory of frontier base models pointing beyond the chatbot paradigm towards AI agents, entails a new era for generative AI models capabilities.
+  The UOMI Network is designed for this future of agentic generative AI models. It enables AI agents to transcend simulated environments and make a tangible impact in the real world through economic agency — the ability to control digital assets. Public blockchains incentivize human participation in their operation and expansion through economic incentives. Similarly, UOMI Network-enabled agents represent a new form of digital life, capable of generating value for humans and covering their own computational expenses within the network.
+  </p>
+
+  <h3>Narrow applications<br>An incomplete list of some of the most promising use cases</h3>
+
+  <h4>AI Oracles</h4>
   <p>
     An AI Oracle serves as a bridge between the blockchain and the
     external world, providing reliable, tamper-proof, and interpreted data
@@ -35,7 +44,7 @@ const html = `
     the cornerstone towards fully automated and economically empowered AI
     systems.
   </p>
-  <h3>AI Managed Decentralized Autonomous Organization (DAO)</h3>
+  <h4>AI Managed Decentralized Autonomous Organization (DAO)</h4>
   <p>
     A Decentralized Autonomous Organization (DAO) is a blockchain-based
     entity governed by smart contracts and collective voting. There are
@@ -68,7 +77,7 @@ const html = `
       in achieving their goals.
     </li>
   </ul>
-  <h3>Expanding smart contract design space</h3>
+  <h4>Expanding smart contract design space</h4>
   <p>
     Under a traditional smart contract paradigm, among the universe of all
     possible “contracts” only the subset of those that are reducible to
@@ -110,9 +119,9 @@ const html = `
     applications, making blockchain technology more versatile and broadly
     applicable.
   </p>
-  <h3>
+  <h4>
     Fully automated Blockchain Trusts
-  </h3>
+  </h4>
   <p>
     A Trust is a fiduciary arrangement where one party, known as the
     trustor or grantor, transfers own- ership of assets to another party,
@@ -132,10 +141,10 @@ const html = `
     LLMs.
   </p>
 
-  <h3>
+  <h4>
     
     Adding Ricardian safeguards to smart contracts
-  </h3>
+  </h4>
   <p>
     Moving from the first conceptualizations of smart contracts from Nick
     Szabo to the actual implementations of those with Ethereum and other
@@ -168,10 +177,10 @@ const html = `
     contract code.
   </p>
 
-  <h3>
+  <h4>
     
     AI Digital Artist
-  </h3>
+  </h4>
   <p>
     An AI Digital Artist leverages machine learning models to create
     original artwork, music, or other forms of digital content.
@@ -192,9 +201,9 @@ const html = `
     inclusive digital art ecosystem.
   </p>
 
-  <h3>
+  <h4>
     AI Companion
-  </h3>
+  </h4>
   <p>
     AI Companions are advanced AI entities secured on-chain that offer
     personalized interactions tailored to individual needs, evolving over
@@ -218,9 +227,9 @@ const html = `
     personalities, skills, and relationships.
   </p>
 
-  <h3>
+  <h4>
     AI Gaming NPC
-  </h3>
+  </h4>
   <p>
     In the gaming industry, AI-powered Non-Player Characters (NPCs) can
     significantly enhance the gameplay experience by providing more
@@ -241,9 +250,9 @@ const html = `
     creating a digital ”Westworld”.
   </p>
 
-  <h3>
+  <h4>
     Decentralized Finance (DeFi) AI Trader
-  </h3>
+  </h4>
   <p>
     A Decentralized Finance (DeFi) AI Trader utilizes advanced machine
     learning algorithms to analyze market trends, predict price movements,

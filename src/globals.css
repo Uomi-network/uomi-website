@@ -31,11 +31,23 @@ body {
 .PageContent h4,
 .PageContent h5,
 .PageContent h6 {
-  font-size: 20px;
   text-align: center;
   font-family: 'Fira Code', monospace;
   font-weight: lighter;
 }
+
+.PageContent h2,
+.PageContent h3 {
+  font-size: 20px;
+}
+
+.PageContent h4,
+.PageContent h5,
+.PageContent h6
+ {
+  font-size: 18px;
+}
+
 
 .PageLatex {
   overflow-y: hidden;
