@@ -11,7 +11,7 @@ const SOCIAL_LINKS = [
   },
   {
     title: "Discord",
-    href: "https://discord.com",
+    href: "https://discord.gg/VYjZTZeQ",
     icon: <FaDiscord fontSize={25} />,
   },
   {
