@@ -5,7 +5,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import dynamic from 'next/dynamic'
 const Hero3d = dynamic(() => import('../components/Hero3d'), { ssr: false })
 
-const TITLE = "UNSTOPPABLE OPEN MACHINE INTELLIGENCE"
+const TITLE = "UNSTOPPABLE AI ECONOMIC INTELLIGENCE"
 
 export default function Index() {
   const heroModelLoaded = useRef(false);
@@ -26,12 +26,13 @@ export default function Index() {
     if (counter < TITLE.length) {
       return TITLE.slice(0, counter)
     } else {
-      const textAnimationClassName = "text-animation-pulse"
-      return (
-        <>
-          U<span className={textAnimationClassName}>NSTOPPABLE</span> O<span className={textAnimationClassName}>PEN</span> M<span className={textAnimationClassName}>ACHINE</span> I<span className={textAnimationClassName}>NTELLIGENCE</span>
-        </>
-      )
+      return TITLE
+      // const textAnimationClassName = "text-animation-pulse"
+      // return (
+      //  <>
+      //    U<span className={textAnimationClassName}>NSTOPPABLE</span> O<span className={textAnimationClassName}>PEN</span> M<span className={textAnimationClassName}>ACHINE</span> I<span className={textAnimationClassName}>NTELLIGENCE</span>
+      //  </>
+      // )
     }
   }
 
