@@ -5,7 +5,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import dynamic from 'next/dynamic'
 const Hero3d = dynamic(() => import('../components/Hero3d'), { ssr: false })
 
-const TITLE = "UNSTOPPABLE AI ECONOMIC INTELLIGENCE"
+const TITLE = "UNSTOPPABLE AI ECONOMIC AGENTS"
 
 export default function Index() {
   const heroModelLoaded = useRef(false);
