@@ -11,8 +11,8 @@ module.exports = {
         primary: '#2d3436',
       },
       fontFamily: {
-        sans: ['Varela', 'sans-serif'],
-        mono: ['"Fira Code"', 'monospace'],
+        sans: ['Montserrat', 'sans-serif'],
+        mono: ['Fira Code', 'monospace'],
       },
     },
   },
