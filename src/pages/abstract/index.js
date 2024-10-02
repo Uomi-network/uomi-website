@@ -6,7 +6,7 @@ import PageHero from "../../components/PageHero";
 import PageContent from "../../components/PageContent";
 
 const html = `
-  <h2>Creating unstoppable AI economic agents</h2>
+  <h2 style="font-family: Fira Code ">Creating unstoppable AI economic agents</h2>
   <p>
     Welcome to UOMI Network, the forefront of integrating artificial
     intelligence with blockchain technology to create autonomous economic
@@ -46,4 +46,4 @@ export default function Index() {
       </PageContainer>
     </>
   );
-};
+}
