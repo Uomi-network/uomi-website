@@ -57,7 +57,7 @@ const RoadmapUomi = () => (
       Road to Mainnet
     </h2>
 
-    <div className="relative px-72">
+    <div className="relative sm:px1 md:px-72">
       {/* <div
         className="absolute top-2 bottom-10 h-full w-0.5 bg-white"
         style={{ left: "17.1rem" }}

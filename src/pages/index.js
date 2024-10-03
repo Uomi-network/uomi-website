@@ -130,8 +130,8 @@ export default function Index() {
                 className={`w-full max-w-[160px] sm:max-w-[200px] md:max-w-[265px] h-auto aspect-w-16 aspect-h-9 bg-[rgba(0,0,0,0.55)] rounded-md flex justify-center items-center p-6 ${
                   logo.src == "/assets/sweat-wallet.png" ||
                   logo.src == "/assets/ethermail.png"
-                    ? "px-10"
-                    : "px-16"
+                    ? "sm:px-0 md:px-10"
+                    : "sm:px-0 md:px-16"
                 }`}
               >
                 <img
