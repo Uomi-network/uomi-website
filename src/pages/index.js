@@ -25,6 +25,13 @@ const LOGHI_PARTNER = [
 export default function Index() {
   const heroModelLoaded = useRef(false);
   const [counter, setCounter] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -60,7 +67,6 @@ export default function Index() {
           content="UOMI Network - Creating unstoppable AI economic agents."
         />
       </Head>
-
       <div
         className="fixed top-0 left-0 w-full h-full bg-black flex justify-center items-center"
         style={{
@@ -74,7 +80,6 @@ export default function Index() {
           <div></div>
         </div>
       </div>
-
       <div
         className="flex-1 flex flex-col relative w-full"
         style={{
@@ -97,6 +102,13 @@ export default function Index() {
           }}
         />
       </div>
+
+      {
+        //to allow scrolling on mobile
+        isMobile && (
+          <div className="absolute top-0 left-0 w-full h-[700px] z-10"></div>
+        )
+      }
       <div className="relative w-full h-screen flex flex-col sm:flex-row justify-center items-center my-52 md:my-1">
         <div className="absolute inset-0 z-0">
           <video
@@ -144,10 +156,8 @@ export default function Index() {
           </div>
         </div>
       </div>
-
       <Slider />
       <ScrollHint />
-
       <GoogleAnalytics gaId="G-6RC95X38DQ" />
     </>
   );
