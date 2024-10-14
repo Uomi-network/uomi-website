@@ -75,7 +75,7 @@ const RoadmapUomi = () => (
         title="Finney"
         subtitle="testnet"
         description="Agents ability to control crypto assets"
-        content="The Finney Testnet adds Treshold Signature Scheme (TSS) distributed key generation and signing. This feature enables nodes to sign transactions on behalf of the AI Agents. It will be possible to publish WASM-defined custom AI Agents. The testnet includes IPFS support to store custom AI Agents configuration and memory."
+        content="The Finney Testnet adds Treshold Signature Scheme (TSS) distributed key generation and signing. This feature enables nodes to sign transactions on behalf of the AI Agents on ANY Blockchain. It will be possible to publish WASM-defined custom AI Agents. The testnet includes IPFS support to store custom AI Agents configuration and memory."
         date="Q4 - 2024"
       />
 
