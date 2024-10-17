@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import Head from "next/head";
 
 import PageContainer from "../../components/PageContainer";
@@ -14,6 +14,8 @@ export const getStaticProps = async () => {
 }
 
 export default function Blog({ posts }) {
+	const [activeMonthIndex, setActiveMonthIndex] = useState(0);
+
 	const postsList = useMemo(() => {
 		return posts.map((post) => {
 			post.dateObj = new Date(post.date);
@@ -24,7 +26,31 @@ export default function Blog({ posts }) {
 		});
 	}, [posts]);
 
-	console.log(postsList);
+	const data = useMemo(() => {
+		const months = {};
+		postsList.forEach((post) => {
+			const month = post.dateObj.toLocaleString('en', { month: 'short' });
+			const year = post.dateObj.getFullYear();
+			const yearShort = year.toString().slice(2);
+			const key = `${month} ${yearShort}`;
+			if (!months[key]) {
+				months[key] = {
+					key: key,
+					posts: [],
+				};
+			}
+
+			months[key].posts.push(post);
+		});
+
+		const monthsList = Object.values(months).map((month) => {
+			month.posts.sort((a, b) => b.dateObj - a.dateObj);
+			month.date = month.posts[0].dateObj;
+			return month;
+		});
+
+		return monthsList.sort((a, b) => b.date - a.date);
+	}, [postsList]);
 
   return (
     <>
@@ -38,7 +64,7 @@ export default function Blog({ posts }) {
 				</h1>
 
 				<ul className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-w-4xl mx-auto">
-					{postsList.map((post) => {
+					{data[activeMonthIndex].posts.map((post) => {
 						return (
 							<li key={post.id} className="">
 								<a href={`/blog/${post.id}`}>
@@ -53,6 +79,19 @@ export default function Blog({ posts }) {
 					})}
 				</ul>
       </PageContainer>
+
+			<ul className="fixed top-[50%] right-0 transform -translate-y-1/2 border-t border-gray-300 hidden md:block">
+				{data.map((month) => (
+					<li key={month.key} className="border-b border-gray-300">
+						<button
+							className={`px-4 py-2 font-mono ${data.indexOf(month) === activeMonthIndex ? 'bg-gray-300 bg-opacity-40' : ''}`}
+							onClick={() => setActiveMonthIndex(data.indexOf(month))}
+						>
+							{month.key}
+						</button>
+					</li>
+				))}
+			</ul>
     </>
   );
 };
