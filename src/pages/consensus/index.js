@@ -5,7 +5,7 @@ import PageContainer from "../../components/PageContainer";
 import PageDownload from "../../components/PageDownload";
 import PageLatex from "../../components/PageLatex";
 
-export default function Index() {
+export default function Consensus() {
   return (
     <>
       <Head>
