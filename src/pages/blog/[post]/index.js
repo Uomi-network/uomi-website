@@ -41,9 +41,16 @@ export default function BlogPost({ post }) {
       </Head>
 
       <PageContainer className='py-0 md:py-0'>
-        <div
+        {post.image ? (
+          <Image
+            src={post.image}
+            alt="Uomi"
+            className="w-full h-auto mb-6"
+            width={36}
+            height={36}
+          />
+        ) : (<div
           className="flex flex-col justify-center items-center py-16 md:py-32"
-          // add a grandiend background (circular) on center from 000a64 to transparent
           style={{
             background: "radial-gradient(circle, #000a64 0%, transparent 50%)",
           }}
@@ -63,7 +70,7 @@ export default function BlogPost({ post }) {
             width={36}
             height={36}
           />
-        </div>  
+        </div>)} 
         <h1 className="text-center text-4xl mb-12">
           {post.title}
         </h1>

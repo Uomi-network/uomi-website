@@ -16,6 +16,7 @@ export async function getPostData(post) {
       id: "",
 			title: "",
       description: "",
+			image: null,
 			date: Date.now(),
 		};
 	}
@@ -47,6 +48,7 @@ export async function generateMetadata({
 		return {
 			title: metadata.title,
 			description: metadata.description,
+			image: metadata.image,
 		};
 	}
 	return {};
