@@ -21,17 +21,17 @@ Optimistic Proof of Computation (OPoC) is a consensus algorithm designed for sec
 
 1. Two-Stage Process:
 
-    * Stage 1: Probabilistic Assurance: A small, randomly selected subset of validators performs the computation. If they all agree, the result is accepted.
+	+ Stage 1: Probabilistic Assurance: A small, randomly selected subset of validators performs the computation. If they all agree, the result is accepted.
 
-    * Stage 2: Dispute Resolution: If there is a disagreement among the initial validators set, a larger subset is involved to resolve the conflict and determine the correct computation; the dishonest validator’s stake gets slashed
+	+ Stage 2: Dispute Resolution: If there is a disagreement among the initial validators set, a larger subset is involved to resolve the conflict and determine the correct computation; the dishonest validator’s stake gets slashed
 
 1. Probabilistic Guarantees:
 
-    * A potential attacker controlling multiple validators will have to answer the following question: what is the probability that only my validators will be selected for an inference? Rephrasing the concept, what is the probability that not even one of the randomly selected subset of validators is honest?
+	+ A potential attacker controlling multiple validators will have to answer the following question: what is the probability that only my validators will be selected for an inference? Rephrasing the concept, what is the probability that not even one of the randomly selected subset of validators is honest?
 
-    * The rational attacker would never attack if the potential reward for succeeding is less than its value at stake (staking requirement to run a validator) weighted by its probability of success. To make a simple example, a rational attacker with 100 at stake and 10% probability of success in gaming the system would require at least (100/10%) = 1000 as defecting reward in order to attempt an attack.  
+	+ The rational attacker would never attack if the potential reward for succeeding is less than its value at stake (staking requirement to run a validator) weighted by its probability of success. To make a simple example, a rational attacker with 100 at stake and 10% probability of success in gaming the system would require at least (100/10%) = 1000 as defecting reward in order to attempt an attack.  
 
-    * This means that an autonomous AI agent powered by the OPoC consensus algorithm is secure for any transaction that involves a value inferior to the minimal defecting reward for a rational attacker. Now the important question is, how big is this value?
+	+ This means that an autonomous AI agent powered by the OPoC consensus algorithm is secure for any transaction that involves a value inferior to the minimal defecting reward for a rational attacker. Now the important question is, how big is this value?
 
 ## Statistics of OPoC:
 
@@ -41,18 +41,18 @@ To calculate the minimal defecting reward for a rational attacker of an OPoC-pow
 
 Looks like a scary formula but the underlying logic is quite simple, let’s go through it with an example, imagine you have a bag with 100 balls:
 
-* 66 white balls (honest validators)
-* 34 black balls (dishonest validators)
-* You randomly pick 10 balls from the bag. 
++ 66 white balls (honest validators)
++ 34 black balls (dishonest validators)
++ You randomly pick 10 balls from the bag. 
 
 You want to find out the chance that all ten selected balls are black (all dishonest validators). Intuitively, the chance of picking 0 white balls (all black) is very low. It's like picking 10 balls and all of them being black when you have mostly white balls in the bag. But how low is this chance? 
 
 To find it out the Hypergeometric Distribution formula uses combinations (ways to pick balls). Here's how it works: 
 
-* Calculate ways to pick 0 white balls from 66. 
-* Calculate ways to pick 10 black balls from 34.
-* Multiply the former two
-* Divide by the total ways to pick 10 balls from 100.
++ Calculate ways to pick 0 white balls from 66. 
++ Calculate ways to pick 10 black balls from 34.
++ Multiply the former two
++ Divide by the total ways to pick 10 balls from 100.
 
 When you do the math, the chance is very, very tiny: about 0.0000075.
 
