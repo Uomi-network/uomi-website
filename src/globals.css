@@ -70,6 +70,30 @@ body {
   font-size: 18px;
 }
 
+.PageContent img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.PageContent ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.PageContent ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.PageContent li {
+  margin-bottom: 10px;
+}
+
+.PageContent li p {
+  margin-bottom: 5px;
+}
+
 .PageLatex {
   overflow-y: hidden;
   overflow-x: hidden;
