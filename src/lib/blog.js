@@ -5,7 +5,7 @@ function readdirSync(dir) {
 export async function getPostData(post) {
 	try {
 		const file = await import("@/posts/" + post + ".mdx");
- 
+		
 		if (file?.metadata) return file.metadata;
 		else {
 			throw new Error(`Unable to find metadata in file ${blogId}.mdx`);
