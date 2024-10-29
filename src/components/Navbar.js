@@ -14,6 +14,10 @@ const MENU_ITEMS = [
         href: "/abstract",
       },
       {
+        title: "Latest",
+        href: "/latest",
+      },
+      {
         title: "Roadmap",
         href: "/roadmap",
       },
