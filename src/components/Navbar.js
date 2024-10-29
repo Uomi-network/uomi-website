@@ -15,7 +15,7 @@ const MENU_ITEMS = [
       },
       {
         title: "Latest",
-        href: "/latest",
+        href: "/blog",
       },
       {
         title: "Roadmap",
