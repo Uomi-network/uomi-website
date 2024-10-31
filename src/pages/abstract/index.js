@@ -24,7 +24,7 @@ const html = `
     opportunities.
   </p>
   <p>
-    UOMI Network leverages the Optimized Proof of Computation (OPoC)
+    UOMI Network leverages the Optimistic Proof of Computation (OPoC)
     consensus algorithm, which ensures secure, efficient AI computation
     with minimal trust assumptions and computational overhead. This
     groundbreaking technology allows for secure interactions between smart
