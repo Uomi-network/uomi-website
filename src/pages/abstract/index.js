@@ -7,7 +7,7 @@ import PageContent from "../../components/PageContent";
 
 const html = `
   <h2 style="font-family: 'Fira Code'">Creating unstoppable AI economic agents</h2>
-  <p style="font-weight: bold">
+  <p>
     Welcome to UOMI, where the fusion of artificial intelligence and blockchain technology is pioneering a new era of autonomous AI economic agents.
   </p>
   <p>
