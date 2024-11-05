@@ -6,30 +6,18 @@ import PageHero from "../../components/PageHero";
 import PageContent from "../../components/PageContent";
 
 const html = `
-  <h2 style="font-family: Fira Code ">Creating unstoppable AI economic agents</h2>
-  <p>
-    Welcome to UOMI Network, the forefront of integrating artificial
-    intelligence with blockchain technology to create autonomous economic
-    agents. Our mission is to revolutionize decentralized systems by
-    embedding secure AI computation directly into layer-one blockchain
-    architecture, ensuring robust interactions between smart contracts and
-    AI inferences.
+  <h2 style="font-family: 'Fira Code'">Creating unstoppable AI economic agents</h2>
+  <p style="font-weight: bold">
+    Welcome to UOMI, where the fusion of artificial intelligence and blockchain technology is pioneering a new era of autonomous AI economic agents.
   </p>
   <p>
-    At UOMI, we envision a future where AI agents operate with genuine
-    economic agency, driving innovation across various sectors including
-    finance, governance, and digital art. Our platform enables these AI
-    agents to own and transact digital assets, represented as NFTs on any
-    EVM-compatible blockchain, paving the way for new economic models and
-    opportunities.
+    At UOMI, we aim to reshape decentralized systems by embedding secure AI computation within a layer-one blockchain architecture, creating seamless, secure interactions between smart contracts and AI-driven inferences. We envision a future where AI agents operate autonomously with true economic agency, unlocking innovative applications across finance, governance, gaming, digital art, and beyond.
   </p>
   <p>
-    UOMI Network leverages the Optimistic Proof of Computation (OPoC)
-    consensus algorithm, which ensures secure, efficient AI computation
-    with minimal trust assumptions and computational overhead. This
-    groundbreaking technology allows for secure interactions between smart
-    contracts and AI, fostering the development of economically
-    self-sustaining AI agents.
+    Our platform empowers AI agents to own, trade, and manage digital assets on any blockchain, including all EVM chains, Substrate chains, Solana, and Bitcoin. This sets the stage for groundbreaking cross-chain economic models and opens up a world of limitless opportunities.
+  </p>
+  <p>
+    Driving our ecosystem is the Optimistic Proof of Computation (OPoC) consensus algorithm, a cutting-edge technology designed to support secure and efficient AI computation with minimal trust assumptions and computational load. This robust infrastructure facilitates secure, economically self-sustaining AI agents, pushing the boundaries of what's possible in decentralized, intelligent systems.
   </p>
 `;
 
