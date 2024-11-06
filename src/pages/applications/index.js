@@ -273,7 +273,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>UOMI Network - Agent</title>
+        <title>UOMI Network - Applications</title>
       </Head>
 
       <PageContainer>
