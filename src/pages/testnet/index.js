@@ -21,7 +21,7 @@ const html = `
     testnet UOMI tokens and interact with the UOMI EVM layer.
   </p>
   <a href="/testnet/explorers" style="font-family: 'Fira Code'" class="text-white font-bold flex justify-center underline hover:text-gray-200 mb-20 mt-20">
-  Discover the UOMI Block Explorer
+  Discover the UOMI Block Explorers
   </a>
 
   <p>
