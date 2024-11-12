@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDiscord, FaGithub } from "react-icons/fa";
+import { FaDiscord, FaGithub, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6"
 import Container from "./Container";
 
@@ -18,6 +18,11 @@ const SOCIAL_LINKS = [
     title: "GitHub",
     href: "https://github.com/Uomi-network",
     icon: <FaGithub fontSize={25} />,
+  },
+  {
+    title: "Telegram",
+    href: "https://t.me/UomiAI",
+    icon: <FaTelegram fontSize={25} />,
   },
 ];
 
