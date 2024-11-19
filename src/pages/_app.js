@@ -13,7 +13,7 @@ const App = ({ Component, pageProps: { session, ...pageProps } }) => {
         <title>Uomi Network</title>
         <meta
           name="description"
-          content="UOMI Network - Creating unstoppable AI economic agents."
+          content="UOMI is an L1 blockchain enabling autonomous AI agents to manage digital assets across blockchains, creating new economic models in DeFi, governance, and digital art. Agents can invest, curate NFTs, and operate autonomously in social media, on-chain and beyond."
         />
         <link rel="manifest" href="/manifest.json" />
         <meta name="application-name" content="Uomi" />

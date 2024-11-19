@@ -60,13 +60,6 @@ export default function Index() {
 
   return (
     <>
-      <Head>
-        <title>Uomi Network</title>
-        <meta
-          name="description"
-          content="UOMI Network - Creating unstoppable AI economic agents."
-        />
-      </Head>
       <div
         className="fixed top-0 left-0 w-full h-full bg-black flex justify-center items-center"
         style={{
