@@ -148,7 +148,7 @@ const html = `
   <p>
     Moving from the first conceptualizations of smart contracts from Nick
     Szabo to the actual implementations of those with Ethereum and other
-    Turing complete blockchains, we had the oppor- tunity to factually
+    Turing complete blockchains, we had the opportunity to factually
     test what are the strengths and the limitations of smart-contracts.
     The “code is law” paradigm that grants objectivity and
     disintermediation in the execution of contracts creates a new
@@ -212,7 +212,7 @@ const html = `
     emotional support, and share daily activities. As personal assistants,
     they manage schedules, set reminders, suggest activities, and offer
     educational content, ensuring secure handling of personal data while
-    learning to offer increas- ingly personalized assistance. For those
+    learning to offer increasingly personalized assistance. For those
     seeking deeper connections, AI Companions can function as virtual
     boyfriends or girlfriends, providing a sense of intimacy and
     partnership through thoughtful conversations and shared interests.
