@@ -21,6 +21,10 @@ const MENU_ITEMS = [
         title: "Roadmap",
         href: "/roadmap",
       },
+      {
+        title: "Manifesto",
+        href: "/manifesto",
+      },
     ],
   },
   {
