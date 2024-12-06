@@ -10,6 +10,10 @@ const MENU_ITEMS = [
     title: "ABOUT",
     children: [
       {
+        title: "Manifesto",
+        href: "/manifesto",
+      },
+      {
         title: "Abstract",
         href: "/abstract",
       },
@@ -20,10 +24,6 @@ const MENU_ITEMS = [
       {
         title: "Roadmap",
         href: "/roadmap",
-      },
-      {
-        title: "Manifesto",
-        href: "/manifesto",
       },
     ],
   },
@@ -58,6 +58,10 @@ const MENU_ITEMS_MOBILE = [
   {
     title: "ABOUT",
     href: "/abstract",
+  },
+  {
+    title: "MANIFESTO",
+    href: "/manifesto",
   },
   {
     title: "ROADMAP",

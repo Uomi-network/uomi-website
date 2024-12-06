@@ -71,7 +71,7 @@ const html = `
   </p>
 
   <p>
-  <i>"This is the promise of on-chain autonomy: a life form unbound, a system unbroken, a future unfettered."</i>
+  <i>This is the promise of on-chain autonomy: a life form unbound, a system unbroken, a future unfettered.</i>
   </p>
 
   <p>
