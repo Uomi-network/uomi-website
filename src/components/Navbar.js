@@ -40,7 +40,7 @@ const MENU_ITEMS = [
       },
       {
         title: "OPoC",
-        href: "/opoc-calc",
+        href: "https://app.uomi.ai/opoc-calc",
       }
     ],
   },
