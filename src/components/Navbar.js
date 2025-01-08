@@ -39,7 +39,7 @@ const MENU_ITEMS = [
         href: "/whitepaper",
       },
       {
-        title: "OPoC",
+        title: "OPoC Simulator",
         href: "https://app.uomi.ai/opoc-calc",
       }
     ],
@@ -122,7 +122,7 @@ export default function Navbar() {
               style={{ top: 0, right: -25 }}
             />
           </button>
-          <div className="md:hidden group-hover:block md:absolute bg-black text-white pt-2">
+          <div className="md:hidden group-hover:block md:absolute bg-black text-white pt-2 min-w-[155px]">
             {item.children.map((child, index) =>
               renderMenuItem(child, `${key}-${index}`, true)
             )}

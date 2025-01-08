@@ -21,28 +21,28 @@ const html = `
 
   <h3>Narrow applications<br>An incomplete list of some of the most promising use cases</h3>
 
-  <h4>AI Oracles</h4>
+  <h4>AI Oracles and Prediction Market Resolvers</h4>
   <p>
-    An AI Oracle serves as a bridge between the blockchain and the
-    external world, providing reliable, tamper-proof, and interpreted data
-    feeds that smart contracts can use to make informed decisions.
-    Traditional oracles such as Chainlink relay information such as
-    financial data, weather updates, or sports results, which are then
-    used in decentralized applications (dApps) for various purposes, such
-    as triggering contract conditions or executing trades. With AI
-    integration, oracles can perform more sophisticated tasks, such as
-    interpreting complex datasets, conducting real-time analytics, and
-    making predictive inferences. This means going far beyond the mere
-    bridging of external data to the blockchain by enabling on-chain
-    intelligence of those data. For instance, an AI Oracle could analyze
-    social media trends to predict stock market movements or assess
-    satellite images to decide if an insured event happened or not, all of
-    this without humans in the loop. These AI-enhanced oracles ensure that
-    smart contracts have not only access to high-quality, real-time data
-    but also the actionable interpretation of those, thereby expanding the
-    scope and reliability of decentralized applications. AI oracles are
-    the cornerstone towards fully automated and economically empowered AI
-    systems.
+    An AI Oracle serves as a bridge between the blockchain and the external world, providing reliable,
+    tamper-proof, and interpreted data feeds that smart contracts can use to make informed decisions.
+    Traditional oracles such as Chainlink relay information such as financial data, weather updates, or
+    sports results, which are then used in decentralized applications (dApps) for various purposes, such
+    as triggering contract conditions or executing trades. With AI integration, oracles can perform more
+    sophisticated tasks, such as interpreting complex datasets, conducting real-time analytics, and making
+    predictive inferences. This means going far beyond the mere bridging of external data to the blockchain
+    12
+    by enabling on-chain intelligence of those data. For instance, an AI Oracle could analyze social media
+    trends to predict stock market movements or assess satellite images to decide if an insured event
+    happened or not, all of this without humans in the loop. These AI-enhanced oracles ensure that smart
+    contracts have not only access to high-quality, real-time data but also the actionable interpretation
+    of those, thereby expanding the scope and reliability of decentralized applications. AI oracles are
+    the cornerstone towards fully automated and economically empowered AI systems. A compelling
+    and specialized use case for AI Oracles is their application as resolvers in prediction markets. For
+    instance, consider Polymarket and the presidential elections: by leveraging secure computation on a
+    large language model (LLM), enabled through the OPoC consensus mechanism, it becomes possible
+    to analyze news outlets and determine the winning candidate. This approach has the potential to
+    significantly expand the scope of prediction markets, making it feasible to resolve outcomes for any
+    event with a measurable online presence.
   </p>
   <h4>AI Managed Decentralized Autonomous Organization (DAO)</h4>
   <p>
