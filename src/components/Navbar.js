@@ -38,6 +38,10 @@ const MENU_ITEMS = [
         title: "Whitepaper",
         href: "/whitepaper",
       },
+      {
+        title: "OPoC",
+        href: "/opoc-calc",
+      }
     ],
   },
   {

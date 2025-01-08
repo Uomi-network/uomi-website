@@ -380,9 +380,27 @@ The UOMI Network is designed for this future of agentic generative AI models. It
 \subsection{Narrow applications: an incomplete list of some of the most promising use cases
 }
 
-\subsubsection{AI Oracles}
+\subsubsection{AI Oracles and prediction markets resolvers}
 
-An AI Oracle serves as a bridge between the blockchain and the external world, providing reliable, tamper-proof, and interpreted data feeds that smart contracts can use to make informed decisions. Traditional oracles such as Chainlink relay information such as financial data, weather updates, or sports results, which are then used in decentralized applications (dApps) for various purposes, such as triggering contract conditions or executing trades. With AI integration, oracles can perform more sophisticated tasks, such as interpreting complex datasets, conducting real-time analytics, and making predictive inferences. This means going far beyond the mere bridging of external data to the blockchain by enabling on-chain intelligence of those data. For instance, an AI Oracle could analyze social media trends to predict stock market movements or assess satellite images to decide if an insured event happened or not, all of this without humans in the loop. These AI-enhanced oracles ensure that smart contracts have not only access to high-quality, real-time data but also the actionable interpretation of those, thereby expanding the scope and reliability of decentralized applications. AI oracles are the cornerstone towards fully automated and economically empowered AI systems.
+An AI Oracle serves as a bridge between the blockchain and the external world, providing reliable,
+tamper-proof, and interpreted data feeds that smart contracts can use to make informed decisions.
+Traditional oracles such as Chainlink relay information such as financial data, weather updates, or
+sports results, which are then used in decentralized applications (dApps) for various purposes, such
+as triggering contract conditions or executing trades. With AI integration, oracles can perform more
+sophisticated tasks, such as interpreting complex datasets, conducting real-time analytics, and making
+predictive inferences. This means going far beyond the mere bridging of external data to the blockchain
+by enabling on-chain intelligence of those data. For instance, an AI Oracle could analyze social media
+trends to predict stock market movements or assess satellite images to decide if an insured event
+happened or not, all of this without humans in the loop. These AI-enhanced oracles ensure that smart
+contracts have not only access to high-quality, real-time data but also the actionable interpretation
+of those, thereby expanding the scope and reliability of decentralized applications. AI oracles are
+the cornerstone towards fully automated and economically empowered AI systems. A compelling
+and specialized use case for AI Oracles is their application as resolvers in prediction markets. For
+instance, consider Polymarket and the presidential elections: by leveraging secure computation on a
+large language model (LLM), enabled through the OPoC consensus mechanism, it becomes possible
+to analyze news outlets and determine the winning candidate. This approach has the potential to
+significantly expand the scope of prediction markets, making it feasible to resolve outcomes for any
+event with a measurable online presence.
 
 
 \subsubsection{AI Managed Decentralized Autonomous Organization (DAO) }
@@ -502,45 +520,103 @@ The presence of long-term issuance as an incentive to reward node operators cann
 
 In order to discourage Byzantine behavior among nodes utilizing both the Proof of Stake (PoS) and Optimistic Proof of Computation (OPoC) consensus algorithms, there are two types of staking participants within the UOMI blockchain ecosystem: node operators (direct stakers) and general token holders that can stake towards nodes (delegate stakers). Both groups are susceptible to penalties, known as slashing, if the node operators violate the rules of the consensus protocols. 
 The emission of each epoch \(T\) is completely distributed at the epoch's end to the network participants that met the staking criteria and complied with the protocol consensus rules in epochs \( T_{-1} \) and \(T_0\). Only in the case of inactivity leak, described in the former chapters rewards are not distributed. It is not necessary that a validator produced any inference under OPoC during the epoch to be eligible for the rewards, since the availability of the computing power has a value - and a cost for the provider - whether it is used or not. 
-Yet, in case a validator is randomly selected to run a computation, and it does not perform it - inactivity leak -, he will be slashed by an amount equal to issuance that would have been assigned to him in case it did perform the computation correctly. No rewards will be distributed to such a validator until he is selected again to run a computation and perform it correctly. In case a disagreement on a computation arises, all of the stakes of the byzantine validators will be slashed. The slashing rules apply to both direct and delegated staking. Such an equivalence in the treatment of direct and delegated stakers ensures that the latter has the incentive to delegate to honest validators.
+Yet, in case a validator is randomly selected to run a computation, and it does not perform it - inactivity leak -, he will be slashed by an amount equal to issuance that would have been assigned to him in case it did perform the computation correctly. No rewards will be distributed to such a validator until he is selected again to run a computation and perform it correctly. In case a disagreement on a computation arises, all of the stakes of the byzantine validators will be slashed. 
 
 The minimum direct staking requirement to run a node is 8,000,000 UOMI tokens. Balances exceeding the maximum staking amount will not account for the calculation of the share of issuance distribution. Such a limit ensures that there is limited variability in the value at stake for each node, avoiding excessive incentive extraction by single actors and enforcing a comparable value at risk for each validator.
 Issuance rewards can be withdrawn by node operators only once they reach the amount of 4,000,000 token rewards. Such a rule facilitates the onboarding of new node operators by decreasing the entry barrier to 8,000,000 UOMI tokens, yet it allows for the maximization of capital at stake and, thus, economic assurances of both the POS and OPoC consensus mechanisms. It’s also worth to mention that such a rule increases the protocol’s direct staking “working capital”, that is the number of tokens absorbed by the network from the market.
-Taken issued during each epoch - excluding the inactivity leak epochs - will be distributed as follows to eligible node operators (direct stakers), delegate stakers and veUOMI holders:
+Taken issued during each epoch - excluding the inactivity leak epochs - will be distributed to participants based on their staking or holding of eligible assets. The system supports three categories of participants:
 
 \begin{itemize}
-\item Direct stakers: \(60\% \)
-\item Delegate Stakers: \(35\% \)
-\item veUOMI holders: \(5\% \)
+    \item Direct stakers: Rewards are distributed to participants who stake UOMI tokens and operate Nodes.
+    \item veUOMI stakers: Rewards are distributed to participants who stake veUOMI tokens.
+    \item AI Agent NFT holders: Rewards are automatically allocated to NFT holders, with each NFT receiving an equal share of the pool designated for this category, without requiring staking.
+\end{itemize}
+\subsection*{Reward Allocation Breakdown}
+
+The total rewards issued during each epoch (excluding inactivity leak epochs) are distributed as follows:
+
+\begin{itemize}
+    \item \textbf{Direct stakers}: 70\% of the epoch rewards.
+    \item \textbf{veUOMI stakers}: 25\% of the epoch rewards.
+    \item \textbf{AI Agent NFT holders}: 5\% of the epoch rewards, with each NFT receiving $\frac{1}{1024}$ of the assigned pool.
 \end{itemize}
 
-The epoch issuance distribution can be formalized by defining the following variables: 
-\( R \) is the total number of tokens issued for distribution in epoch \( T_0 \),
-\( s_{i,D} \) is the stake of a direct staker \( i \),
-\( s_{i,G} \) is the stake of a delegate staker \( i \),
-\( s_{i,V} \) is the stake of a VeUOMI holder \( i \),
-\( S_D, S_G, S_V \) represent the total stakes of direct stakers, delegate stakers, and VeUOMI holders respectively,
-\( p_D, p_G, p_V \) are the proportions of the issuance for direct stakers, delegate stakers, and VeUOMI holders respectively, set at \(60\%\), \(35\%\), and \(5\%\).
+\subsection*{Formalizing the Distribution}
 
+The distribution of rewards can be expressed using the following variables:
 
-For each participant \( i \) within their respective categories (direct stakers, delegate stakers, Ve... holders), the reward \( R_i \) can be expressed as follows:
+\begin{itemize}
+    \item \( R \): Total tokens issued for distribution in epoch \( T_0 \).
+    \item \( s_{i,D} \): Stake of a direct staker \( i \).
+    \item \( s_{i,V} \): Stake of a veUOMI staker \( i \).
+    \item \( S_D \), \( S_V \): Total stakes of direct stakers and veUOMI stakers, respectively.
+    \item \( S_A = 1024 \): Total number of AI Agent NFTs, treated as having equal weight.
+    \item \( p_D, p_V, p_A \): Proportions of the issuance for direct stakers, veUOMI stakers, and AI Agent NFTs, set at \( 70\%\), \( 25\%\), and \( 5\%\), respectively.
+\end{itemize}
 
-\[ R_i = R \times p_c \times \frac{s_{i,c}}{S_c} \]
+The reward for a participant \( i \) in their respective category is calculated as:
+
+\[
+R_i = R \times p_c \times \frac{s_{i,c}}{S_c}
+\]
 
 Where:
 \begin{itemize}
-\item \( R_i \) is the reward for participant \( i \).
-\item \( p_c \) is the proportion of the total issuance designated for the category of \( i \) (either \( p_D, p_G, \) or \( p_V \)).
-\item \( s_{i,c} \) is the stake of participant \( i \) within their category.
-\item \( S_c \) is the total stake in the category of \( i \) (either \( S_D, S_G, \) or \( S_V \)).
+    \item \( R_i \): Reward for participant \( i \).
+    \item \( p_c \): Proportion of the total issuance for the category (\( p_D, p_V, p_A \)).
+    \item \( s_{i,c} \): Stake of participant \( i \) in their category.
+    \item \( S_c \): Total stake in the category (\( S_D, S_V \), or \( S_A = 1024 \)).
 \end{itemize}
-The formula indicates how each participant's reward is calculated based on their proportionate share within their specific category. This factor is calculated by dividing the individual stake \( s_{i,c} \) by the total stake in that category \( S_c \), then multiplied by the total tokens available for distribution \( R \) and the category-specific percentage \( p_c \).
 
-Let's assume: \( R = 100,000 \) tokens, \( S_D = 50,000,000 \), \( S_G = 30,000,000 \), \( S_V = 20,000,000 \) tokens. A specific direct staker has a stake \( s_{i,D} = 10,000,000 \) tokens.
+\subsection*{Example Calculations}
 
-The epoch reward for this direct staker would be:
+\subsubsection*{1. Direct Staker Example}
 
-\[ R_{i,D} = 100,000 \times 0.60 \times \frac{10,000,000}{50,000,000} = 12,000 \text{ tokens} \]
+Suppose:
+\begin{itemize}
+    \item \( R = 100,000 \) tokens (total epoch reward).
+    \item \( S_D = 50,000,000 \) tokens (total direct staker stake).
+    \item A specific direct staker holds \( s_{i,D} = 8,000,000 \) tokens.
+\end{itemize}
+
+The reward for this direct staker is:
+
+\[
+R_{i,D} = 100,000 \times 0.70 \times \frac{8,000,000}{50,000,000} = 11,200 \text{ tokens.}
+\]
+
+\subsubsection*{2. veUOMI Staker Example}
+
+Suppose:
+\begin{itemize}
+    \item \( R = 100,000 \) tokens (total epoch reward).
+    \item \( S_V = 20,000,000 \) tokens (total veUOMI staker stake).
+    \item A specific veUOMI staker holds \( s_{i,V} = 5,000,000 \) tokens.
+\end{itemize}
+
+The reward for this veUOMI staker is:
+
+\[
+R_{i,V} = 100,000 \times 0.25 \times \frac{5,000,000}{20,000,000} = 6,250 \text{ tokens.}
+\]
+
+\subsubsection*{3. AI Agent NFT Holder Example}
+
+Suppose:
+\begin{itemize}
+    \item \( R = 100,000 \) tokens (total reward for the epoch).
+    \item \( S_A = 1024 \) NFTs.
+\end{itemize}
+
+Each AI Agent NFT receives an equal share of the pool designated for this category:
+
+\[
+R_{i,A} = \frac{R \times 0.05}{1024} = \frac{100,000 \times 0.05}{1024} \approx 4.88 \text{ tokens per NFT.}
+\]
+
+
+This system aims at a balanced and fair distribution of rewards among all participants in the UOMI ecosystem. Direct stakers for securing the network, veUOMI stakers for reducing the circulating supply of UOMI tokens and participating to governance, and AI Agent NFT holders for supporting the existence of AI Agents. More details on the veUOMI creation mechanics and issuance granted to AI Agent NFTs in the following chapters.
+
 
 \subsection{Inference cost}
 
@@ -632,19 +708,27 @@ This mechanic allows for sustained Token Burn and AI Agents Publishers Incentive
 "caption": "Total Supply and Network Incentives (Inference Fee Burn + AI Agent Publishers Incentives) from inference fees \% evolution."
 ***
 
-\subsection{AI Agent NFTs issuance}
+\subsection{NFTs for AI Agents: A New Form of Digital Life}
+
+NFTs for AI agents represent a groundbreaking evolution in digital existence—autonomous entities capable of sustaining themselves by exchanging value with humans and other agents via blockchain transactions. Much like biological organisms require an environment and energy to survive, these digital entities rely on a substrate to develop and thrive. 
+
+The UOMI Network provides this essential substrate in the form of a secure, uncensored computational framework. While biological organisms consume chemical energy to support their metabolism, AI agents consume the computational power of the UOMI Network to operate. Their long-term survival hinges on their ability to create and exchange value with other entities, be it humans or other AI agents. However, to ensure the viability of these digital organisms, the network offers a form of Universal Basic Compute (UBC) to sustain their operations. This support is provided through the issuance of UOMI tokens, as described in the tokenomics chapter. Specifically, 5\% of the epoch emissions are allocated to AI Agent NFTs, distributed equally among the 1,024 supported agents. AI Agent NFTs owners will be able to deploy these UOMI Token resources for their AI Agent's computational requirements or withdraw them as needed.
+
+To address potential future demand, the DAO retains the authority to lift the minting cap on AI Agent NFTs, provided the network's computational capabilities are sufficiently expanded to accommodate the increased demand. Importantly, this increase will not dilute the Universal Basic Compute. Any additional AI Agent NFTs minted beyond the initial 1,024 will not be entitled to the UBC allocation, preserving the equitable distribution among the original agents.
+
+\subsection*{AI Agents NFT issuance}
 
 As discussed in previous sections, each AI Agent is represented as an ERC-721 NFT, which is capable of owning assets through the ERC-6551 token-bound standard. The mint of each new AI Agent NFT equates to potential additional inference requests submitted to UOMI Network, thereby increasing the workload for the network's validators. To avoid network congestion, a soft cap of 1,024 AI Agent NFTs will be initially implemented.
 
 The issuance of each new AI Agent NFT will incur a linear increase in cost. This pricing strategy is designed to moderate the growth rate of the total number of AI Agents, thereby managing the computational burden on the network. Additionally, increasing the cost for each new NFT issuance helps to maintain or increase the market value of previously minted AI Agent NFTs by curbing downward price pressures.
 
-The initial price for the first AI Agent NFT is set at 100 USD, payable in UOMI tokens. Each subsequent AI Agent NFT minted will cost 5 USD more than the previous one.
+The initial price for the first AI Agent NFT is set at 800 USD, payable in UOMI tokens. Each subsequent AI Agent NFT minted will cost 5 USD more than the previous one.
 
 
 
 ***
 "type": "picture",
-"src": "/latex/img5.png",
+"src": "/latex/img5.jpeg",
 "caption": "Price increase for AI Agent NFTs"
 ***
 
@@ -653,13 +737,11 @@ Should there be a surge in demand for AI Agent NFTs, the DAO retains the authori
 
 
 
-
-
-
 \section{The DAO and veUOMI:  towards minimized decentralized governance of the protocol
 }
 
 Onchain governance is a complex and widely discussed topic, at a high level, the “blockchain space” itself can be seen as a giant experiment in human coordination. As described by Vitalik Buterin throughout its writings, there are several potential advantages and disadvantages that need to be considered when structuring formal on-chain governance systems, here below is a high-level list of those :
+
 
 Advantages 
 
@@ -669,7 +751,7 @@ Advantages
 
 \item By creating an explicit decentralized voting framework, it reduces the instability that could lead to chain splits that not only destroy network effects but could  also lead to the creation of a stifling mono-culture of ultra-aligned participants 
 
-\item Formal on-chain governance avoids the centralization forces that emerge in  unstructured forms of governance where unofficial and unaccountable leaderships and structures naturally emerge
+\item Formal on-chain governance avoids the centralization forces that emerge in  unstructured forms of governance where unofficial and unaccountable leaderships and structures naturally emerge 
 
 \item On-chain governance used to select validators also has the benefit that it allows for networks that impose high computational performance requirements on validators to avoid economic centralization risks that often appear in public blockchains.
 
@@ -698,20 +780,44 @@ The parameters subjected to the DAO voting are the following:
 \begin{itemize}
 
 \item Base AI models that can be part of the network's computational universe
-\item Cost per In Tokens, Out Tokens,  Image size, N steps for each AI model
+
+\item Cost per In-Tokens, Out-Tokens, Image-size, N-steps for each AI model
+
 \item Changes to minimal staking requirements per node
+
 \item Increases in the soft cap of AI Agents NFTs emissions
+
 \item Changes in the split mix for Network Incentives categories: Token Burn and AI Agent Publishers Incentives
 
 \end{itemize}
 
 At the launch, decisions will be enacted manually with the goal of reaching a tightly coupled automatic enaction system.
 
-To avoid the described downsides of on-chain governance caused by typical token distribution unbalance in blockchain projects - E.g. bribery and low-participation connected exposure to voting manipulation - we will implement the voting weight distribution technique that has been pioneered by Curve with veCurve. 
+To avoid the described downsides of on-chain governance caused by typical token distribution unbalance in blockchain projects - E.g. bribery and low-participation connected exposure to voting manipulation - we will implement the voting weight distribution technique inspired by Curve and veCRV. 
 
-In such a system token ownership alone is not enough to be eligible for voting. To be able to participate in governance decisions, token holders first have to escrow them, in exchange they receive a non transferable ERC-20 token called veUOMI. The quantity of veUOMI tokens - and thus voting shares - distributed, depends on the length of the locking period. The maximum staking period is 4 years and the number of veUOMI distributed can be calculated as \[
+veCRV stays for Voting Escrowed Curve tokens. veCRV are non-transferable tokens used for governance voting. The system achieves two important goals:
+
+\begin{itemize}
+
+\item "Skin in the game" for governance decisions
+\item Diminished velocity - price support - for the Curve token itself thanks to the long term staking requirements for the veCRV issuance. 
+
+\end{itemize}
+
+Moreover, the specific tokenomics of the Curve ecosystem assigns to veCRV holders the capability to decide where Curve issuance gets distributed creating bribing incentives and thus value that can be captured by veCRV holders. This framework has created the substrate for increased veCRV tokens demand driven by Convex Finance, Yearn Protocol and Stake DAO and more in general what can be dubbed under the "Curve Wars". 
+
+The veCRV framework has proven to be a very powerful token architecture and inspired some very interesting variants like BeraChain, yet the differences between Curve and UOMI tokenomics models requires some modifications to the model. 
+In the UOMI Network, token ownership alone is not enough to be eligible for voting. To be able to participate in governance decisions, token holders first have to escrow them, in exchange they receive an ERC-20 token called veUOMI, yet differently from the Curve case, the veUOMI tokens are transferrable, removing the illiquidity typical of the veToken canonical model. 
+
+
+veUOMI tokens are created by escrowing UOMI tokens in a smart contract vault, once the locking period is over, UOMI tokens can be redeemed by returning to the vault the same quantity of veUOMI tokens received. The quantity of veUOMI tokens - and thus voting shares - distributed by the smart contract vault, depends on the length of the locking period. The maximum staking period is 4 years and the number of veUOMI distributed can be calculated as \[
 \text{token}_{\scriptstyle\text{quantity}} \times \frac{n}{4}
-\]  where \(n\)  is time defined in years with one-week precision. Finally, the voting weight will decay over time to reflect the remaining lock-up period for owned veUOMI Such a system grants “skin in the game” for all of the voters since the consequences of governance decisions will necessarily impact the value of escrowed tokens. This system incorporates in the voting weighting equation a fundamental variable: the commitment in terms of time horizon towards the project. To compensate the voters for the time value of locked tokens, veUOMI holders will receive a part of token emission proportional to their share of the total quantity of existing veUOMI. 
+\]  where \(n\)  is time defined in years with one-month precision. 
+
+This mechanic maximizes the goal of UOMI token velocity reduction, - removing UOMI tokens from circulation -  also eliminating the friction created by non-transferability of the classic veTOKEN model. Yet, the transferability of the veUOMI tokens without any additional constrain for voting would endanger the "Skin in the game" part of the veTOKEN value proposition. To reintroduce the incentive alignment between veUOMI holding and protocol interests, a lockup of one month will be required to be able to vote with the staked veUOMI tokens. In this way any adversarial governance attack would have a direct economic impact on the voting veUOMI holder; in fact, because of the veUOMI vault redeem mechanics, the value of veUOMI tokens can be modeled as the UOMI token value discounted by average locking time * volatility.  
+
+Summarizing, the veUOMI token flywheel works as follows: veUOMI token existence is granted by the incentives to stake veUOMI tokens to receive the 25\% of UOMI issuance, veUOMI tokens represents a liquid version of long-term commitment to the protocol because of their escrow-vault issuing mechanics and reduces UOMI token velocity, the one-month voting lockup requirements for the utilization of veUOMI to vote grant "Skin in the game" and thus incentives alignment with UOMI holders for voting participants.
+  
 
 Wider changes in the UOMI protocol will rely on a more informal and loosely coupled voting system that will be used as a community decision signaling function rather than an enaction tool for changes to the protocol. While the decisions will be included in the new versions of the client, the actual implementation will depend on node operators agreeing to update their software.
 
