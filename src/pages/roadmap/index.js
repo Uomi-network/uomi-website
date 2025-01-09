@@ -74,18 +74,16 @@ const RoadmapUomi = () => (
       <RoadmapItem
         title="Finney"
         subtitle="testnet"
-        description="Agents ability to control crypto assets"
-        content="The Finney Testnet adds Treshold Signature Scheme (TSS) distributed key generation and signing. This feature enables nodes to sign transactions on behalf of the AI Agents on ANY Blockchain. It will be possible to publish WASM-defined custom AI Agents. The testnet includes IPFS support to store custom AI Agents configuration and memory."
+        description="OPoC consensus"
+        content="The Finney Testnet implements the OPoC consensus algorithm for secure and efficient AI computation.  Third-party node operators will be able to join the network. Slashing and inactivity leak will be implemented but not applied to nodes. It will be possible to publish WASM-defined custom AI Agents. The testnet includes IPFS support to store custom AI Agents configuration and memory."
         date="Q4 - 2024"
       />
 
       <RoadmapItem
         title="Turing"
         subtitle="testnet"
-        description="OPoC consensus"
-        content=" 
- 	
-The Turing Testnet implements the OPoC consensus algorithm for secure and efficient AI computation. Turing is an incentivized testnet. Third-party node operators will be able to stake and join the network. Slashing and inactivity leak will be implemented but not applied to stakers. The Turing Testnet also enables cross-chain transaction signing, allowing AI Agents to sign transactions on arbitrary blockchains."
+        description="Agents ability to control crypto assets"
+        content="The Turing Testnet adds Treshold Signature Scheme (TSS) distributed key generation and signing. This feature enables nodes to sign transactions on behalf of the AI Agents on ANY Blockchain. A TSS-enabled bridge will be deployed to allow for trustless bridging of blockchain assets between UOMI Network and Ethereum. Slashing and inactivity leak will be activated with testnet tokens."
         date="Q1 - 2025"
       />
 
