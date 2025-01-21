@@ -214,7 +214,7 @@ const DocsLanding = () => {
 
         {filteredCategories.length === 0 && (
           <div className="text-center text-white/60 mt-8">
-            No results found for "{searchQuery}"
+            No results found for &quot;{searchQuery}&quot;
           </div>
         )}
       </div>
