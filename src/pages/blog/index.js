@@ -27,29 +27,35 @@ export default function Blog({ posts }) {
 	}, [posts]);
 
 	const data = useMemo(() => {
-		const months = {};
+		// const months = {};
+		// postsList.forEach((post) => {
+		// 	const month = post.dateObj.toLocaleString('en', { month: 'short' });
+		// 	const year = post.dateObj.getFullYear();
+		// 	const yearShort = year.toString().slice(2);
+		// 	const key = `${month} ${yearShort}`;
+		// 	if (!months[key]) {
+		// 		months[key] = {
+		// 			key: key,
+		// 			posts: [],
+		// 		};
+		// 	}
+
+		// 	months[key].posts.push(post);
+		// });
+
+		// const monthsList = Object.values(months).map((month) => {
+		// 	month.posts.sort((a, b) => b.dateObj - a.dateObj);
+		// 	month.date = month.posts[0].dateObj;
+		// 	return month;
+		// });
+
+		// return monthsList.sort((a, b) => b.date - a.date);
+
+		const months = { 0: { posts: [] } };
 		postsList.forEach((post) => {
-			const month = post.dateObj.toLocaleString('en', { month: 'short' });
-			const year = post.dateObj.getFullYear();
-			const yearShort = year.toString().slice(2);
-			const key = `${month} ${yearShort}`;
-			if (!months[key]) {
-				months[key] = {
-					key: key,
-					posts: [],
-				};
-			}
-
-			months[key].posts.push(post);
+			months[0].posts.push(post);
 		});
-
-		const monthsList = Object.values(months).map((month) => {
-			month.posts.sort((a, b) => b.dateObj - a.dateObj);
-			month.date = month.posts[0].dateObj;
-			return month;
-		});
-
-		return monthsList.sort((a, b) => b.date - a.date);
+		return months;
 	}, [postsList]);
 
   return (
@@ -80,7 +86,7 @@ export default function Blog({ posts }) {
 				</ul>
       </PageContainer>
 
-			<ul className="fixed top-[50%] right-0 transform -translate-y-1/2 border-t border-gray-300 hidden md:block">
+			{/* <ul className="fixed top-[50%] right-0 transform -translate-y-1/2 border-t border-gray-300 hidden md:block">
 				{data.map((month) => (
 					<li key={month.key} className="border-b border-gray-300">
 						<button
@@ -91,7 +97,7 @@ export default function Blog({ posts }) {
 						</button>
 					</li>
 				))}
-			</ul>
+			</ul> */}
     </>
   );
 };
