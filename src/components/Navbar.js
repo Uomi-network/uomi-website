@@ -62,41 +62,6 @@ const MENU_ITEMS = [
   },
 ];
 
-const MENU_ITEMS_MOBILE = [
-  {
-    title: "ABOUT",
-    href: "/abstract",
-  },
-  {
-    title: "MANIFESTO",
-    href: "/manifesto",
-  },
-  {
-    title: "ROADMAP",
-    href: "/roadmap",
-  },
-  {
-    title: "CONSENSUS",
-    href: "/consensus",
-  },
-  {
-    title: "WHITEPAPER",
-    href: "/whitepaper",
-  },
-  {
-    title: "APPLICATIONS",
-    href: "/applications",
-  },
-  {
-    title: "TESTNET",
-    href: "/testnet",
-  },
-  {
-    title: "FAUCET",
-    href: "https://app.uomi.ai/faucet",
-  },
-];
-
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const router = useRouter();
@@ -118,7 +83,7 @@ export default function Navbar() {
     if (item.children) {
       return (
         <div className="group relative z-50" key={key}>
-          <button className="opacity-75 md:opacity-100 md:hover:underline relative text-lg w-full block py-2 md:py-0 md:text-base font-mono">
+          <button className="opacity-75 md:opacity-100 md:hover:underline relative text-lg w-full block pt-2 md:pt-0 md:text-base font-mono">
             {item.title}{" "}
             <MdArrowDropDown
               className="absolute"
@@ -126,7 +91,7 @@ export default function Navbar() {
               style={{ top: 0, right: -25 }}
             />
           </button>
-          <div className="md:hidden group-hover:block md:absolute bg-black text-white pt-2 min-w-[155px]">
+          <div className="md:hidden group-hover:block md:absolute bg-black text-white md:pt-2 min-w-[155px]">
             {item.children.map((child, index) =>
               renderMenuItem(child, `${key}-${index}`, true)
             )}
@@ -234,7 +199,7 @@ export default function Navbar() {
         </Link>
 
         <div className="text-center w-full">
-          {MENU_ITEMS_MOBILE.map((item, index) => (
+          {MENU_ITEMS.map((item, index) => (
             <div className="my-4" key={index}>
               {renderMenuItem(item, index)}
             </div>
