@@ -56,6 +56,10 @@ const MENU_ITEMS = [
     title: "FAUCET",
     href: "https://app.uomi.ai/faucet",
   },
+  {
+    title: "DOCS",
+    href: "/docs",
+  },
 ];
 
 const MENU_ITEMS_MOBILE = [

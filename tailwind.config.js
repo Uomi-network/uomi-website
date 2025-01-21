@@ -14,6 +14,36 @@ module.exports = {
         sans: ['Montserrat', 'sans-serif'],
         mono: ['Fira Code', 'monospace'],
       },
+      keyframes: {
+        wave: {
+          '0%, 100%': { 
+            transform: 'translateX(-100%)', 
+            opacity: 0 
+          },
+          '50%': { 
+            transform: 'translateX(100%)', 
+            opacity: 1 
+          },
+        },
+        'wave-vertical': {
+          '0%, 100%': { 
+            transform: 'translateY(-100%)', 
+            opacity: 0 
+          },
+          '50%': { 
+            transform: 'translateY(100%)', 
+            opacity: 1 
+          },
+        }
+      },
+      animation: {
+        'wave': 'wave 8s ease-in-out infinite',
+        'wave-slow': 'wave 12s ease-in-out infinite',
+        'wave-slower': 'wave 16s ease-in-out infinite',
+        'wave-vertical': 'wave-vertical 10s ease-in-out infinite',
+        'wave-vertical-slow': 'wave-vertical 14s ease-in-out infinite',
+        'wave-vertical-slower': 'wave-vertical 18s ease-in-out infinite',
+      }
     },
   },
   plugins: [],

@@ -5,6 +5,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes wave {
+  0%, 100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes wave-vertical {
+  0%, 100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+}
+
+.animate-wave {
+  animation: wave 8s ease-in-out infinite;
+}
+
+.animate-wave-slow {
+  animation: wave 12s ease-in-out infinite;
+}
+
+.animate-wave-slower {
+  animation: wave 16s ease-in-out infinite;
+}
+
+.animate-wave-vertical {
+  animation: wave-vertical 10s ease-in-out infinite;
+}
+
+.animate-wave-vertical-slow {
+  animation: wave-vertical 14s ease-in-out infinite;
+}
+
+.animate-wave-vertical-slower {
+  animation: wave-vertical 18s ease-in-out infinite;
+}
+
 body {
   background-color: black;
   color: white;
