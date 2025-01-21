@@ -87,6 +87,7 @@ body {
 .PageContent h6,
 .PageContent p,
 .PageContent ul,
+.PageContent ol,
 .PageContent li {
   font-weight: medium;
   margin-bottom: 40px;
