@@ -7,25 +7,16 @@ import PageContent from "../../components/PageContent";
 
 const html = `
   <h1 class="flex text-3xl text-center justify-center mb-40"> TESTNET </h1>
-  <h2>The Babbage Testnet</h2>
+  <h2>The Finney Testnet</h2>
   <p>
-    Welcome to the Babbage Testnet, the first iteration of the UOMI Network 
-    and the testing ground for deterministic parallel inference with large-scale 
-    AI models. It constitutes the foundation of the OPoC consensus algorithm, 
-    proving the ability to execute deterministic computation on the latest open-source 
-    LLMs and Stable Diffusion models running on heterogeneous node hardware setups. 
-    It will support inferences with LLAMA 3.1 70B, and Flux.1. The AI model list 
-    will be expanded in the subsequent Testnets. The Babbage testnet features 
-    Multi VM framework, supporting both WASM and EVM. It features the deployment 
-    of Solidity compiled smart contracts. You can use the UOMI faucet to obtain 
-    testnet UOMI tokens and interact with the UOMI EVM layer.
+    Welcome to the Finney Testnet, the second iteration of the UOMI Network and the initial proving ground for OPoC, our novel consensus algorithm designed to secure on-chain AI computations. Building on the foundations of Babbage, Finney supports AI models such as QWEN 2.5 (32B) and Flux 0.1, introducing optional slashing penalties (not enforced) to maintain tamper-proof inferences. It enables publishing custom AI Agents in WASM format, includes multi-VM support (EVM and WASM), and integrates IPFS for persistent storage. You can also connect AI Agents with Web2 services via ready-to-use proxies. Validators who join Finney will be eligible for UOMI token rewards at Mainnet launch.
   </p>
   <a href="/testnet/explorers" style="font-family: 'Fira Code'" class="text-white font-bold flex justify-center underline hover:text-gray-200 mb-20 mt-20">
   Discover the UOMI Block Explorers
   </a>
 
   <p>
-   The following links allow you to interact with our first two application examples, made possible by the Babbage Testnet: a Chatbot Agent featuring decentralized private inference on LLAMA 3.1 70B with full knowledge of the UOMI WP and a Twitter Agent called  @HypertitionAI. Each message includes the links to the blockchain confirmations of the nodes performing a proto-OPoC consensus on the AI model to grant the computation's correctness.
+   The following links allow you to interact with our first two application examples, now running on the Finney Testnet: a Chatbot Agent featuring decentralized private inference on QWEN 2.5 (32B) with knowledge of the UOMI Whitepaper, and a Twitter Agent called @HypertitionAI. Each message includes blockchain confirmations from the nodes performing a proto-OPoC consensus on the AI model, ensuring the correctness of the computations.
   </p>
   <a href="https://app.uomi.ai/chat" style="font-family: 'Fira Code'" class="text-white font-bold flex justify-center underline hover:text-gray-200 mb-3 mt-20" target="_blank">
   Interact with the AI Chat Agent &#8599;
