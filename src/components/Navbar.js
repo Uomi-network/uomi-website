@@ -142,9 +142,9 @@ export default function Navbar() {
       >
         <Link href="/" style={{ width: 150 }}>
           <Image
-            src="/assets/logo-pictogram.svg"
+            src="/assets/logo.svg"
             alt="Uomi logo"
-            className="h-10 w-auto hidden md:block z-50"
+            className="h-20 w-auto hidden md:block z-50"
             width={36}
             height={36}
           />
@@ -162,14 +162,12 @@ export default function Navbar() {
           {MENU_ITEMS.map((item, index) => renderMenuItem(item, index))}
         </div>
 
-        <div className="flex justify-end items-center" style={{ width: 150 }}>
-          <Image
-            src="/assets/logo.svg"
-            alt="Uomi logo full"
-            className="h-20 w-auto hidden md:flex"
-            width={100}
-            height={36}
-          />
+        <div className="hidden md:flex justify-end items-center" style={{ width: 150 }}>
+          <Link href="https://app.uomi.ai/" target="_blank">
+            <button className="bg-gradient-to-r from-white to-white/80 text-black px-4 py-2 rounded-full font-mono">
+              Dashboard
+            </button>
+          </Link>
         </div>
 
         <div className="md:hidden z-40">
@@ -204,6 +202,14 @@ export default function Navbar() {
               {renderMenuItem(item, index)}
             </div>
           ))}
+          
+          <div className="my-4">
+            <Link href="https://app.uomi.ai/" target="_blank">
+              <button className="bg-gradient-to-r from-white to-white/80 text-black px-4 py-2 rounded-full font-mono">
+                Dashboard
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
