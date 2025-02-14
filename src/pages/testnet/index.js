@@ -6,9 +6,7 @@ import PageContainer from "../../components/PageContainer";
 import PageContent from "../../components/PageContent";
 
 const html = `
-  Posso aiutarti ad aggiungere un link alla dashboard accanto all'altro link, mantenendo lo stesso stile.
-Ecco il codice HTML modificato:
-htmlCopy<h1 class="flex text-3xl text-center justify-center mb-40"> TESTNET </h1>
+<h1 class="flex text-3xl text-center justify-center mb-40"> TESTNET </h1>
 <h2>The Finney Testnet</h2>
 <p>
   Welcome to the Finney Testnet, the second iteration of the UOMI Network and the initial proving ground for OPoC, our novel consensus algorithm designed to secure on-chain AI computations. Building on the foundations of Babbage, Finney supports AI models such as QWEN 2.5 (32B) and Flux 0.1, introducing optional slashing penalties (not enforced) to maintain tamper-proof inferences. It enables publishing custom AI Agents in WASM format, includes multi-VM support (EVM and WASM), and integrates IPFS for persistent storage. You can also connect AI Agents with Web2 services via ready-to-use proxies. Validators who join Finney will be eligible for UOMI token rewards at Mainnet launch.
