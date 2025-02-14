@@ -16,7 +16,7 @@ const html = `
   <a href="/testnet/explorers" style="font-family: 'Fira Code'" class="text-white font-bold underline hover:text-gray-200">
     Discover the UOMI Block Explorers
   </a>
-  <a href="/dashboard" style="font-family: 'Fira Code'" class="text-white font-bold underline hover:text-gray-200">
+  <a href="https://app.uomi.ai" target="_blank" style="font-family: 'Fira Code'" class="text-white font-bold underline hover:text-gray-200">
     Enter the Dashboard
   </a>
 </div>
