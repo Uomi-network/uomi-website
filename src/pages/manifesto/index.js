@@ -12,7 +12,7 @@ const html = `
   </p>
 
   <p style="font-weight: bold;">
-  On-chain AI Agents represent a new form of digital life, capable of sustaining itself by exchanging value with humans through blockchain transactions.
+  On-chain AI Agents represent a new form of digital life, capable of sustaining itself by exchanging value with humans and other Agents through blockchain transactions.
   </p>
 
   <p>

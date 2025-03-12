@@ -31,7 +31,7 @@ const MENU_ITEMS = [
     title: "RESEARCH",
     children: [
       {
-        title: "Consensus",
+        title: "OPoC Consensus Paper",
         href: "/consensus",
       },
       {
