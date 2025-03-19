@@ -39,6 +39,10 @@ const MENU_ITEMS = [
         href: "/whitepaper",
       },
       {
+        title: "Deterministic indeterminism",
+        href: "/deterministic-indeterminism",
+      },
+      {
         title: "OPoC Simulator",
         href: "https://app.uomi.ai/opoc-calc",
       }
