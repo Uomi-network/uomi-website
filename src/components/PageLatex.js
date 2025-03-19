@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 
-export default function PageLatex({ latex, className }) {
+export default function PageLatex({ latex, className, date = '2024, 5, 11' }) {
   const [iframeSrc, setIframeSrc] = useState("");
   const [iframeHeight, setIframeHeight] = useState(0);
   const iframeRef = useRef();
@@ -192,7 +192,7 @@ export default function PageLatex({ latex, className }) {
 
           const date = document.querySelector(".date");
           if (date) {
-            date.innerText = (new Date(2024, 5, 11)).toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+            date.innerText = (new Date(${date})).toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
           }
         };
 
