@@ -331,7 +331,7 @@ To empirically validate the Deterministic Indeterminism approach, we conducted a
 \begin{center}
 ***
 "type": "picture",
-"src": "/latex/baseinferenceprobshistogram.svg",
+"src": "/latex/rankingstabilityheatmapchanged.png",
 "caption": "Heatmap illustrating token position stability across different hardware implementations. The visualization demonstrates that the vast majority of tokens maintain their exact ranking positions, with only a small fraction shifting by at most one position, highlighting the robust preservation of token ordering during inference."
 ***
 \end{center}
@@ -361,8 +361,8 @@ Finally, to quantify the impact of numerical variations on our method, we perfor
 \begin{center}
 ***
 "type": "picture",
-"src": "/latex/baseinferenceprobshistogram.png",
-"caption": "Histogram of token probabilities from base model inferences, showing a strong rightward skew with most tokens assigned high probabilities ($0.8$-$1.0$). The logarithmic frequency scale reveals that tokens with near-certainty predictions (probability $\approx 1.0$) outnumber lower-confidence predictions by multiple orders of magnitude, indicating high model confidence in the majority of its token selections."
+"src": "/latex/baseinferenceprobshistogram.svg",
+"caption": "Histogram of token probabilities from base model inferences, showing a strong rightward skew with most tokens assigned high probabilities. The logarithmic frequency scale reveals that tokens with near-certainty predictions outnumber lower-confidence predictions by multiple orders of magnitude, indicating high model confidence in the majority of its token selections."
 ***
 \end{center}
 
