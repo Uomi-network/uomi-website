@@ -20,6 +20,38 @@ const LOGHI_PARTNER = [
     src: "/assets/impossible-cloud-network.svg",
     alt: "impossible-cloud-network",
   },
+  {
+    src: "/assets/aitech-pad.png",
+    alt: "aitech-pad",
+  },
+  {
+    src: "/assets/ankr.png",
+    alt: "ankr",
+  },
+  {
+    src: "/assets/heurist.png",
+    alt: "heurist",
+  },
+  {
+    src: "/assets/io-net.png",
+    alt: "io-net",
+  },
+  {
+    src: "/assets/inferix.png",
+    alt: "inferix",
+  },
+  {
+    src: "/assets/paid.png",
+    alt: "paid",
+  },
+  {
+    src: "/assets/poolz.png",
+    alt: "poolz",
+  },
+  {
+    src: "/assets/sentient-labs.png",
+    alt: "sentient-labs",
+  },
 ];
 
 export default function Index() {
