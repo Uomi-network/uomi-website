@@ -125,7 +125,7 @@ export default function PageLatex({ latex, className, date = '2024, 5, 11' }) {
           if (matches) {
             for (const match of matches) {
               // Remove the *** markers with { and } for JSON.parse
-              const json = match.replace('***', '{').replace('***', '}');
+              const json = match.slice(3, -3);
               let obj;
 
               try {
